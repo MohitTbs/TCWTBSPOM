@@ -15,19 +15,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Properties Config = new Properties();
 
 	public FileInputStream fis;
+	
+	
 
 	
 
-	public BasePage() {
-		// TODO Auto-generated constructor stub
-	}
-
-
-
+	
+	
 	@BeforeMethod
 	public void setUp() {
 

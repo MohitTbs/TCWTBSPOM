@@ -13,25 +13,28 @@ public class LoginPage extends BasePage{
 
 
 	public LoginPage() {
-		super();
-		// TODO Auto-generated constructor stub
+		PageFactory.initElements(driver, this);
+		
 	}
 
 
 	@FindBy(id="UserName")
-	WebElement unameTxtBx;
+	public WebElement unameTxtBx;
 	
 	@FindBy(id="Password")
-	WebElement pwdTxtBx;
+	public WebElement pwdTxtBx;
 	
 	@FindBy(xpath="//div//button[@value='LogIn']")
-	WebElement logInBtn;
+	public WebElement logInBtn;
 	
 	
-	public DashboardPage loginIn() {
+	public void loginIn() {
 		
-		unameTxtBx.sendKeys(Config.getProperty("username"));
-		pwdTxtBx.sendKeys(Config.getProperty("password"));
+		String uname = Config.getProperty("username");
+		System.out.println(uname);
+		String pwd = Config.getProperty("password");
+		unameTxtBx.sendKeys(uname);
+		pwdTxtBx.sendKeys(pwd);
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -40,7 +43,7 @@ public class LoginPage extends BasePage{
 		}
 		logInBtn.click();
 		
-		return new DashboardPage();
+		//return new DashboardPage();
 	}
 	
 	
