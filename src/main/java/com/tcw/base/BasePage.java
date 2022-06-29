@@ -15,8 +15,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
 
-	public static WebDriver driver;
-	public Properties Config = new Properties();
+	public WebDriver driver;
+	public static Properties Config = new Properties();
 
 	public FileInputStream fis;
 	

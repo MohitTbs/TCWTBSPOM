@@ -1,8 +1,5 @@
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-
 import com.tcw.base.BasePage;
-import com.tcw.base.BaseTest;
 import com.tcw.pages.DashboardPage;
 import com.tcw.pages.LoginPage;
 
@@ -13,7 +10,7 @@ public class LogInTest extends BasePage {
 
 	@Test(priority=1)
 	public void logIn() {
-		lp= new LoginPage();
+		lp= new LoginPage(driver);
 		lp.loginIn();
 		
 		

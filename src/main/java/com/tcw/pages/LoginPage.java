@@ -1,5 +1,6 @@
 package com.tcw.pages;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +13,8 @@ public class LoginPage extends BasePage{
 	
 
 
-	public LoginPage() {
+	public LoginPage(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		
 	}
@@ -30,11 +32,8 @@ public class LoginPage extends BasePage{
 	
 	public void loginIn() {
 		
-		String uname = Config.getProperty("username");
-		System.out.println(uname);
-		String pwd = Config.getProperty("password");
-		unameTxtBx.sendKeys(uname);
-		pwdTxtBx.sendKeys(pwd);
+		unameTxtBx.sendKeys(Config.getProperty("username"));
+		pwdTxtBx.sendKeys(Config.getProperty("password"));
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
