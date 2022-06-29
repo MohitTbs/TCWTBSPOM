@@ -5,8 +5,9 @@
     <classes>
       <class name="LogInTest">
         <methods>
+          <include name="tearDown"/>
+          <include name="addTaskTest"/>
           <include name="setUp"/>
-          <include name="logIn"/>
         </methods>
       </class> <!-- LogInTest -->
     </classes>

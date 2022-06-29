@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-29T18:12:47 IST" name="Default suite" finished-at="2022-06-29T18:13:17 IST" duration-ms="30448">
+  <suite started-at="2022-06-29T18:40:33 IST" name="Default suite" finished-at="2022-06-29T18:41:26 IST" duration-ms="52405">
     <groups>
     </groups>
-    <test started-at="2022-06-29T18:12:47 IST" name="Default test" finished-at="2022-06-29T18:13:17 IST" duration-ms="30448">
+    <test started-at="2022-06-29T18:40:33 IST" name="Default test" finished-at="2022-06-29T18:41:26 IST" duration-ms="52405">
       <class name="LogInTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:LogInTest@4567f35d]" started-at="2022-06-29T18:12:47 IST" name="setUp" finished-at="2022-06-29T18:13:08 IST" duration-ms="20916" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:LogInTest@2e005c4b]" started-at="2022-06-29T18:40:33 IST" name="setUp" finished-at="2022-06-29T18:40:47 IST" duration-ms="13468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logIn()[pri:1, instance:LogInTest@4567f35d]" started-at="2022-06-29T18:13:08 IST" name="logIn" finished-at="2022-06-29T18:13:17 IST" duration-ms="9360" status="PASS">
+        <test-method signature="logIn()[pri:1, instance:LogInTest@2e005c4b]" started-at="2022-06-29T18:40:47 IST" name="logIn" finished-at="2022-06-29T18:40:58 IST" duration-ms="11284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:LogInTest@2e005c4b]" started-at="2022-06-29T18:40:58 IST" name="tearDown" finished-at="2022-06-29T18:40:59 IST" duration-ms="621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:LogInTest@2e005c4b]" started-at="2022-06-29T18:40:59 IST" name="setUp" finished-at="2022-06-29T18:41:11 IST" duration-ms="11811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addTaskTest()[pri:2, instance:LogInTest@2e005c4b]" started-at="2022-06-29T18:41:11 IST" name="addTaskTest" finished-at="2022-06-29T18:41:25 IST" duration-ms="14759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTaskTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:LogInTest@2e005c4b]" started-at="2022-06-29T18:41:25 IST" name="tearDown" finished-at="2022-06-29T18:41:26 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- LogInTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

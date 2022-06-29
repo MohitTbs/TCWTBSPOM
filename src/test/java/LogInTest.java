@@ -16,5 +16,12 @@ public class LogInTest extends BasePage {
 		
 		
 	}
+	@Test(priority=2)
+	public void addTaskTest() {
+		logIn();
+		dashp = new DashboardPage(driver);
+		dashp.addTask();
+		
+	}
 	
 }
