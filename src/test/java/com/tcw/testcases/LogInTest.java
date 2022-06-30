@@ -10,7 +10,7 @@ public class LogInTest extends BasePage {
 	LoginPage lp;
 	DashboardPage dashp;
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void logIn() {
 		lp = new LoginPage(driver);
 		lp.loginIn();
