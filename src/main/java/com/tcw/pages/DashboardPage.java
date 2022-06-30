@@ -9,8 +9,8 @@ import com.tcw.base.BasePage;
 
 public class DashboardPage extends BasePage {
 	
-	@FindBy(id="add_task_lin")
-	WebElement addTaskBtn;
+	@FindBy(id="add_task_link")
+	public WebElement addTaskBtn;
 	
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -27,7 +27,13 @@ public class DashboardPage extends BasePage {
 			e.printStackTrace();
 		}
 		System.out.println(driver.getTitle());
-		//addTaskBtn.click();
+		addTaskBtn.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	
