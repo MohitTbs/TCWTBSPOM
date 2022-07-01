@@ -65,7 +65,7 @@ public class BasePage {
 
 	}
 	
-	//@AfterMethod
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
