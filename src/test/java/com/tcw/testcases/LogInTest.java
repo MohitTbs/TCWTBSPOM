@@ -11,7 +11,15 @@ public class LogInTest extends BasePage {
 	DashboardPage dashp;
 
 	//@Test(priority = 1)
+	public void logIn1() {
+		log.info("In login 1");
+		lp = new LoginPage(driver);
+		lp.loginIn();
+
+	}
+	
 	public void logIn() {
+		log.info("In login 2");
 		lp = new LoginPage(driver);
 		lp.loginIn();
 

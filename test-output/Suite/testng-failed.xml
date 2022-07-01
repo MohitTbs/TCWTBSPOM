@@ -3,13 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tcw.testcases.addTaskFromDashboardTest">
+      <class name="com.tcw.testcases.DashboardTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="addTaskTest"/>
+          <include name="tearDown"/>
+          <include name="settingTheLogs"/>
+          <include name="setUp"/>
+          <include name="goToPendingTimesheetReqTest"/>
         </methods>
-      </class> <!-- com.tcw.testcases.addTaskFromDashboardTest -->
+      </class> <!-- com.tcw.testcases.DashboardTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
