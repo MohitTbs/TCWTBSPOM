@@ -4,6 +4,7 @@
 	<test  name="Test">
 		<classes>	
 			<class name="com.tcw.testcases.DashboardTest" />
+			<class name="com.tcw.testcases.PendingTimesheetRequestsTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
