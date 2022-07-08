@@ -15,15 +15,19 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.tcw.utilities.ExcelReader;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BasePage {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Logger log = Logger.getLogger(BasePage.class.getName());
 	public static Properties Config = new Properties();
-	public FileInputStream fis;
+	public  FileInputStream fis;
 	public static WebDriverWait wait;
+	public static ExcelReader excel = new ExcelReader(".\\src\\test\\resources\\excel\\TCWPOMFILE.xlsx");
 	
 	
 

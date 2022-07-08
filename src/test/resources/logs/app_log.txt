@@ -1,10 +1,10 @@
-INFO    2022-07-01 18:36:00,196 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-01 18:36:03,011 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-01 18:36:05,417 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-01 18:36:20,739 [main] com.tcw.base.BasePage  - Inside the addTaskBtn
-INFO    2022-07-01 18:36:23,165 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-01 18:36:24,409 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-01 18:36:27,553 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-01 18:36:44,894 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-01 18:36:46,024 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-01 18:36:47,072 [main] com.tcw.base.BasePage  - In login 2
+INFO    2022-07-08 16:16:43,402 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
+INFO    2022-07-08 16:16:46,264 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
+INFO    2022-07-08 16:16:47,687 [main] com.tcw.base.BasePage  - In login 2
+INFO    2022-07-08 16:17:02,129 [main] com.tcw.base.BasePage  - Inside the addTaskBtn
+INFO    2022-07-08 16:17:03,810 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
+INFO    2022-07-08 16:17:04,930 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
+INFO    2022-07-08 16:17:07,991 [main] com.tcw.base.BasePage  - In login 2
+INFO    2022-07-08 16:17:26,310 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
+INFO    2022-07-08 16:17:28,030 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
+INFO    2022-07-08 16:17:36,864 [main] com.tcw.base.BasePage  - In login 2
