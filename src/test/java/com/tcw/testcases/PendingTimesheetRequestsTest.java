@@ -19,7 +19,7 @@ public class PendingTimesheetRequestsTest extends LogInTest{
 		ptr = new PendingTimesheetRequestsPage(driver);
 		ptr=dashp.goToPendingTimesheetReq();
 		String tsReqLstTtl1 =ptr.timesheetRequestList();
-		Assert.assertEquals(tsReqLstTtl1, "Name");
+		Assert.assertEquals(tsReqLstTtl1, "Naxme");
 		
 	}
 	

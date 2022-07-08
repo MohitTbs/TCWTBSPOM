@@ -16,7 +16,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-
+import com.sun.tools.sjavac.Log;
 import com.tcw.utilities.ScreenshotUtil;
 
 public class CustomListener implements ITestListener {
@@ -52,9 +52,9 @@ public class CustomListener implements ITestListener {
 				+ " height=200 width=200></img></a>");
 
 		/////////////////////////////////// Extent Report ////////////////
-		String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
-		test.fail(exceptionMessage);
-
+		//String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace()); -- It was giving half of the error.
+		//test.fail(exceptionMessage);
+		test.fail(result.getThrowable()); // It gives the complete error.
 		String methodName = result.getMethod().getMethodName();
 		String logText = "<b>" + "TEST CASE:- " + methodName + " FAILED" + "</b>";
 

@@ -5,61 +5,61 @@
       <![CDATA[Capturing Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Fri_Jul_08_16_17_59_IST_2022.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jul_08_17_21_48_IST_2022.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Fri_Jul_08_16_17_59_IST_2022.jpg><img src=Fri_Jul_08_16_17_59_IST_2022.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jul_08_17_21_48_IST_2022.jpg><img src=Fri_Jul_08_17_21_48_IST_2022.jpg height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-07-08T16:16:43 IST" name="Suite" finished-at="2022-07-08T16:18:00 IST" duration-ms="76655">
+  <suite started-at="2022-07-08T17:20:04 IST" name="Suite" finished-at="2022-07-08T17:21:49 IST" duration-ms="105203">
     <groups>
     </groups>
-    <test started-at="2022-07-08T16:16:43 IST" name="Test" finished-at="2022-07-08T16:18:00 IST" duration-ms="76655">
+    <test started-at="2022-07-08T17:20:04 IST" name="Test" finished-at="2022-07-08T17:21:49 IST" duration-ms="105203">
       <class name="com.tcw.testcases.DashboardTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T16:16:43 IST" name="settingTheLogs" finished-at="2022-07-08T16:16:43 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T17:20:04 IST" name="settingTheLogs" finished-at="2022-07-08T17:20:04 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T16:16:43 IST" name="setUp" finished-at="2022-07-08T16:16:47 IST" duration-ms="4272" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T17:20:04 IST" name="setUp" finished-at="2022-07-08T17:20:18 IST" duration-ms="13777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addTaskTest()[pri:1, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T16:16:47 IST" name="addTaskTest" finished-at="2022-07-08T16:17:03 IST" duration-ms="15653" status="PASS">
+        <test-method signature="addTaskTest()[pri:1, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T17:20:18 IST" name="addTaskTest" finished-at="2022-07-08T17:20:37 IST" duration-ms="19191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTaskTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T16:17:03 IST" name="tearDown" finished-at="2022-07-08T16:17:03 IST" duration-ms="455" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T17:20:37 IST" name="tearDown" finished-at="2022-07-08T17:20:37 IST" duration-ms="494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T16:17:03 IST" name="setUp" finished-at="2022-07-08T16:17:07 IST" duration-ms="4172" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T17:20:37 IST" name="setUp" finished-at="2022-07-08T17:20:49 IST" duration-ms="11446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="goToPendingTimesheetReqTest()[pri:2, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T16:17:07 IST" name="goToPendingTimesheetReqTest" finished-at="2022-07-08T16:17:25 IST" duration-ms="17627" status="PASS">
+        <test-method signature="goToPendingTimesheetReqTest()[pri:2, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T17:20:49 IST" name="goToPendingTimesheetReqTest" finished-at="2022-07-08T17:21:11 IST" duration-ms="22570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToPendingTimesheetReqTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T16:17:25 IST" name="tearDown" finished-at="2022-07-08T16:17:26 IST" duration-ms="694" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@3bd418e4]" started-at="2022-07-08T17:21:11 IST" name="tearDown" finished-at="2022-07-08T17:21:13 IST" duration-ms="1199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tcw.testcases.DashboardTest -->
       <class name="com.tcw.testcases.PendingTimesheetRequestsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@7d42c224]" started-at="2022-07-08T16:17:26 IST" name="setUp" finished-at="2022-07-08T16:17:36 IST" duration-ms="10554" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@7d42c224]" started-at="2022-07-08T17:21:13 IST" name="setUp" finished-at="2022-07-08T17:21:24 IST" duration-ms="11446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingTimesheetRequestsTest@7d42c224]" started-at="2022-07-08T16:17:36 IST" name="timesheetRequestListTest" finished-at="2022-07-08T16:17:59 IST" duration-ms="22215" status="FAIL">
+        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingTimesheetRequestsTest@7d42c224]" started-at="2022-07-08T17:21:24 IST" name="timesheetRequestListTest" finished-at="2022-07-08T17:21:48 IST" duration-ms="24289" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Nam2e] but found [Name]]]>
+              <![CDATA[expected [Naxme] but found [Name]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Nam2e] but found [Name]
+              <![CDATA[java.lang.AssertionError: expected [Naxme] but found [Name]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -103,17 +103,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[Capturing Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Fri_Jul_08_16_17_59_IST_2022.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jul_08_17_21_48_IST_2022.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Fri_Jul_08_16_17_59_IST_2022.jpg><img src=Fri_Jul_08_16_17_59_IST_2022.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jul_08_17_21_48_IST_2022.jpg><img src=Fri_Jul_08_17_21_48_IST_2022.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- timesheetRequestListTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@7d42c224]" started-at="2022-07-08T16:17:59 IST" name="tearDown" finished-at="2022-07-08T16:18:00 IST" duration-ms="667" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@7d42c224]" started-at="2022-07-08T17:21:49 IST" name="tearDown" finished-at="2022-07-08T17:21:49 IST" duration-ms="441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="33.280">
+           time="41.761">
   <properties />
   
   
-            <testcase name="goToPendingTimesheetReqTest" time="17.627" classname="com.tcw.testcases.DashboardTest" />
-                <testcase name="addTaskTest" time="15.653" classname="com.tcw.testcases.DashboardTest" />
+            <testcase name="addTaskTest" time="19.191" classname="com.tcw.testcases.DashboardTest" />
+                <testcase name="goToPendingTimesheetReqTest" time="22.570" classname="com.tcw.testcases.DashboardTest" />
       
 </testsuite>

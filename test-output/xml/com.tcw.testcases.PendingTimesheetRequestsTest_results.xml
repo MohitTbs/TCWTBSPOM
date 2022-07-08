@@ -4,13 +4,13 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="22.215">
+           time="24.289">
   <properties />
-            <testcase name="timesheetRequestListTest" time="22.215" classname="com.tcw.testcases.PendingTimesheetRequestsTest">
+            <testcase name="timesheetRequestListTest" time="24.289" classname="com.tcw.testcases.PendingTimesheetRequestsTest">
                 <failure type="java.lang.AssertionError"
-                  message="expected [Nam2e] but found [Name]"
+                  message="expected [Naxme] but found [Name]"
               >
-<![CDATA[java.lang.AssertionError: expected [Nam2e] but found [Name]
+<![CDATA[java.lang.AssertionError: expected [Naxme] but found [Name]
   org.testng.Assert.fail(Assert.java:99)
   org.testng.Assert.failNotEquals(Assert.java:1037)
   org.testng.Assert.assertEqualsImpl(Assert.java:140)
