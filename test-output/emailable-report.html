@@ -9,15 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">105,203</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">86,310</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tcw.testcases.PendingTimesheetRequestsTest</td><td><a href="#m0">timesheetRequestListTest</a></td><td rowspan="1">1657281084465</td><td rowspan="1">24289</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.tcw.testcases.DashboardTest</td><td><a href="#m1">addTaskTest</a></td><td rowspan="1">1657281018090</td><td rowspan="1">19191</td></tr><tr class="passedeven"><td><a href="#m2">goToPendingTimesheetReqTest</a></td><td rowspan="1">1657281049246</td><td rowspan="1">22570</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tcw.testcases.DashboardTest</td><td><a href="#m0">goToPendingTimesheetReqTest</a></td><td rowspan="1">1657531237167</td><td rowspan="1">3878</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.tcw.testcases.DashboardTest</td><td><a href="#m1">addTaskTest</a></td><td rowspan="1">1657531208404</td><td rowspan="1">16590</td></tr><tr class="passedodd"><td rowspan="1">com.tcw.testcases.PendingTimesheetRequestsTest</td><td><a href="#m2">timesheetRequestListTest</a></td><td rowspan="1">1657531258813</td><td rowspan="1">17482</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.tcw.testcases.PendingTimesheetRequestsTest#timesheetRequestListTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Capturing Screenshot<br/><a target="_blank" href=Fri_Jul_08_17_21_48_IST_2022.jpg>Screenshot</a><br/><br><br/><a target="_blank" href=Fri_Jul_08_17_21_48_IST_2022.jpg><img src=Fri_Jul_08_17_21_48_IST_2022.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Naxme] but found [Name]
-	at com.tcw.testcases.PendingTimesheetRequestsTest.timesheetRequestListTest(PendingTimesheetRequestsTest.java:22)
+<h2>Test</h2><h3 id="m0">com.tcw.testcases.DashboardTest#goToPendingTimesheetReqTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Capturing Screenshot<br/><a target="_blank" href=Mon_Jul_11_14_50_41_IST_2022.jpg>Screenshot</a><br/><br><br/><a target="_blank" href=Mon_Jul_11_14_50_41_IST_2022.jpg><img src=Mon_Jul_11_14_50_41_IST_2022.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71331fa84b69cccc67080eca50f1d957, clickElement {id=39edb605-ef04-4d02-846a-52f46300aa6c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55968/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (71331fa84b69cccc67080eca50f1d957)] -&gt; xpath: //div//button[@value=&apos;LogIn&apos;]]
+Session ID: 71331fa84b69cccc67080eca50f1d957
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.tcw.pages.LoginPage.loginIn(LoginPage.java:48)
+	at com.tcw.testcases.LogInTest.logIn(LogInTest.java:24)
+	at com.tcw.testcases.DashboardTest.goToPendingTimesheetReqTest(DashboardTest.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.tcw.testcases.DashboardTest#addTaskTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.tcw.testcases.DashboardTest#goToPendingTimesheetReqTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tcw.testcases.PendingTimesheetRequestsTest#timesheetRequestListTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

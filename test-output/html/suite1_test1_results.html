@@ -12,7 +12,7 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 104.891s
+  Test duration: 80.378s
 </p>
 
 
@@ -20,36 +20,61 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.tcw.testcases.PendingTimesheetRequestsTest</td>
+        <td colspan="3" class="group">com.tcw.testcases.DashboardTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  timesheetRequestListTest
+                  goToPendingTimesheetReqTest
       </td>
   <td class="duration">
-    24.289s
+    3.878s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Capturing Screenshot
-                                <a target="_blank" href=Fri_Jul_08_17_21_48_IST_2022.jpg>Screenshot</a>
+                                <a target="_blank" href=Mon_Jul_11_14_50_41_IST_2022.jpg>Screenshot</a>
                                 <br>
-                                <a target="_blank" href=Fri_Jul_08_17_21_48_IST_2022.jpg><img src=Fri_Jul_08_17_21_48_IST_2022.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Mon_Jul_11_14_50_41_IST_2022.jpg><img src=Mon_Jul_11_14_50_41_IST_2022.jpg height=200 width=200></img></a>
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Naxme] but found [Name]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status<br/>
+from unknown error: unexpected command response<br/>
+&nbsp; (Session info: chrome=103.0.5060.114)<br/>
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;<br/>
+System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [71331fa84b69cccc67080eca50f1d957, clickElement {id=39edb605-ef04-4d02-846a-52f46300aa6c}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55968/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Element: [[ChromeDriver: chrome on WINDOWS (71331fa84b69cccc67080eca50f1d957)] -&gt; xpath: //div//button[@value=&apos;LogIn&apos;]]<br/>
+Session ID: 71331fa84b69cccc67080eca50f1d957</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:99)<br />
-              org.testng.Assert.failNotEquals(Assert.java:1037)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:140)<br />
-              org.testng.Assert.assertEquals(Assert.java:122)<br />
-              org.testng.Assert.assertEquals(Assert.java:629)<br />
-              org.testng.Assert.assertEquals(Assert.java:639)<br />
-              com.tcw.testcases.PendingTimesheetRequestsTest.timesheetRequestListTest(PendingTimesheetRequestsTest.java:22)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)<br />
+              com.tcw.pages.LoginPage.loginIn(LoginPage.java:48)<br />
+              com.tcw.testcases.LogInTest.logIn(LogInTest.java:24)<br />
+              com.tcw.testcases.DashboardTest.goToPendingTimesheetReqTest(DashboardTest.java:26)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -95,7 +120,7 @@
                   addTaskTest
       </td>
   <td class="duration">
-    19.191s
+    16.590s
   </td>
   <td class="result">
         
@@ -104,12 +129,16 @@
 
       </td>
 </tr>
+          <tr>
+        <td colspan="3" class="group">com.tcw.testcases.PendingTimesheetRequestsTest</td>
+      </tr>
+            
 <tr>
   <td class="method">
-                  goToPendingTimesheetReqTest
+                  timesheetRequestListTest
       </td>
   <td class="duration">
-    22.570s
+    17.482s
   </td>
   <td class="result">
         
