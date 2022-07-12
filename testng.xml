@@ -13,6 +13,7 @@
 		<classes>
 			<class name="com.tcw.testcases.DashboardTest" />
 			<class name="com.tcw.testcases.PendingTimesheetRequestsTest" />
+			<class name="com.tcw.testcases.PossibleClockInErrorsTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
