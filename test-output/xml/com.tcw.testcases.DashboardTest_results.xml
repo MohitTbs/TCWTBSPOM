@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
-           tests="2"
+           tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="44.231">
+           time="18.152">
   <properties />
   
   
-            <testcase name="addTaskTest" time="27.038" classname="com.tcw.testcases.DashboardTest" />
-                <testcase name="goToPendingTimesheetReqTest" time="17.193" classname="com.tcw.testcases.DashboardTest" />
+            <testcase name="goToPendingTimesheetReqTest" time="18.152" classname="com.tcw.testcases.DashboardTest" />
       
 </testsuite>

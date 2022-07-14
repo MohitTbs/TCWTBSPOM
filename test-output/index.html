@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tcw.testcases.PendingAbsenceRequestsTest" class="method navigator-link" hash-for-method="timesheetRequestListTest">timesheetRequestListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +118,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tcw.testcases.DashboardTest" class="method navigator-link" hash-for-method="addTaskTest">addTaskTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.tcw.testcases.DashboardTest" class="method navigator-link" hash-for-method="goToPendingTimesheetReqTest">goToPendingTimesheetReqTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tcw.testcases.PossibleClockInErrorsTest" class="method navigator-link" hash-for-method="possClockInErrListTest">possClockInErrListTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -134,34 +138,55 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tcw.testcases.PossibleClockInErrorsTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.tcw.testcases.PendingAbsenceRequestsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="possClockInErrListTest">
-                  </a> <!-- possClockInErrListTest -->
-                  <span class="method-name">possClockInErrListTest</span>
+                  <a name="timesheetRequestListTest">
+                  </a> <!-- timesheetRequestListTest -->
+                  <span class="method-name">timesheetRequestListTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//th[text()=&apos;Name&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cd2ee6ff550a32fc003ce5c99a8fc38, findElement {using=xpath, value=//th[text()=&apos;Name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60205}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60205/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cd2ee6ff550a32fc003ce5c99a8fc38
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+	at com.tcw.pages.PendingAbsenceRequestsPage.absenceReqList(PendingAbsenceRequestsPage.java:42)
+	at com.tcw.testcases.PendingAbsenceRequestsTest.timesheetRequestListTest(PendingAbsenceRequestsTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.tcw.testcases.DashboardTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addTaskTest">
-                  </a> <!-- addTaskTest -->
-                  <span class="method-name">addTaskTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="goToPendingTimesheetReqTest">
@@ -205,7 +230,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.tcw.testcases.DashboardTest&quot;/&gt;
       &lt;class name=&quot;com.tcw.testcases.PendingTimesheetRequestsTest&quot;/&gt;
-      &lt;class name=&quot;com.tcw.testcases.PossibleClockInErrorsTest&quot;/&gt;
+      &lt;class name=&quot;com.tcw.testcases.PendingAbsenceRequestsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -245,23 +270,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addTaskTest')
-data.setCell(0, 2, 'com.tcw.testcases.DashboardTest')
-data.setCell(0, 3, 27038);
+data.setCell(0, 1, 'timesheetRequestListTest')
+data.setCell(0, 2, 'com.tcw.testcases.PendingAbsenceRequestsTest')
+data.setCell(0, 3, 32540);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'possClockInErrListTest')
-data.setCell(1, 2, 'com.tcw.testcases.PossibleClockInErrorsTest')
-data.setCell(1, 3, 20243);
+data.setCell(1, 1, 'goToPendingTimesheetReqTest')
+data.setCell(1, 2, 'com.tcw.testcases.DashboardTest')
+data.setCell(1, 3, 18152);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'goToPendingTimesheetReqTest')
-data.setCell(2, 2, 'com.tcw.testcases.DashboardTest')
-data.setCell(2, 3, 17193);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'timesheetRequestListTest')
-data.setCell(3, 2, 'com.tcw.testcases.PendingTimesheetRequestsTest')
-data.setCell(3, 3, 16661);
+data.setCell(2, 1, 'timesheetRequestListTest')
+data.setCell(2, 2, 'com.tcw.testcases.PendingTimesheetRequestsTest')
+data.setCell(2, 3, 17287);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -277,6 +298,15 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">timesheetRequestListTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Capturing Screenshot</span>
+                <span class="reporter-method-output"><a target="_blank" href=Wed_Jul_13_16_31_50_IST_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target="_blank" href=Wed_Jul_13_16_31_50_IST_2022.jpg><img src=Wed_Jul_13_16_31_50_IST_2022.jpg height=200 width=200></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -285,7 +315,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.tcw.testcases.PossibleClockInErrorsTest</span>
+              <span class="ignored-class-name">com.tcw.testcases.PendingAbsenceRequestsTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">settingTheLogs</span>
                 <br/>
@@ -313,57 +343,47 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">77 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addTaskTest</span>
-                <span class="method-start">13287 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">40340 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">40899 ms</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToPendingTimesheetReqTest</span>
-                <span class="method-start">51698 ms</span>
+                <span class="method-start">13673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">68894 ms</span>
+                <span class="method-start">31838 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tcw.testcases.PendingTimesheetRequestsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">69263 ms</span>
+                <span class="method-start">33111 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">timesheetRequestListTest</span>
-                <span class="method-start">80225 ms</span>
+                <span class="method-start">44636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">96887 ms</span>
+                <span class="method-start">61926 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tcw.testcases.PossibleClockInErrorsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tcw.testcases.PendingAbsenceRequestsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">97366 ms</span>
+                <span class="method-start">62363 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">possClockInErrListTest</span>
-                <span class="method-start">108555 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">timesheetRequestListTest</span>
+                <span class="method-start">73928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">128799 ms</span>
+                <span class="method-start">106777 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

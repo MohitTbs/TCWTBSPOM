@@ -1,69 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Capturing Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Jul_13_16_31_50_IST_2022.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Jul_13_16_31_50_IST_2022.jpg><img src=Wed_Jul_13_16_31_50_IST_2022.jpg height=200 width=200></img></a>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-07-12T19:05:00 IST" name="Suite" finished-at="2022-07-12T19:07:09 IST" duration-ms="129372">
+  <suite started-at="2022-07-13T16:30:04 IST" name="Suite" finished-at="2022-07-13T16:31:51 IST" duration-ms="107219">
     <groups>
     </groups>
-    <test started-at="2022-07-12T19:05:00 IST" name="Test" finished-at="2022-07-12T19:07:09 IST" duration-ms="129372">
+    <test started-at="2022-07-13T16:30:04 IST" name="Test" finished-at="2022-07-13T16:31:51 IST" duration-ms="107219">
       <class name="com.tcw.testcases.DashboardTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.DashboardTest@6b98a075]" started-at="2022-07-12T19:05:00 IST" name="settingTheLogs" finished-at="2022-07-12T19:05:00 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.DashboardTest@544820b7]" started-at="2022-07-13T16:30:04 IST" name="settingTheLogs" finished-at="2022-07-13T16:30:04 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@6b98a075]" started-at="2022-07-12T19:05:00 IST" name="setUp" finished-at="2022-07-12T19:05:13 IST" duration-ms="13208" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@544820b7]" started-at="2022-07-13T16:30:04 IST" name="setUp" finished-at="2022-07-13T16:30:18 IST" duration-ms="13594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addTaskTest()[pri:1, instance:com.tcw.testcases.DashboardTest@6b98a075]" started-at="2022-07-12T19:05:13 IST" name="addTaskTest" finished-at="2022-07-12T19:05:40 IST" duration-ms="27038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addTaskTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@6b98a075]" started-at="2022-07-12T19:05:40 IST" name="tearDown" finished-at="2022-07-12T19:05:41 IST" duration-ms="557" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@6b98a075]" started-at="2022-07-12T19:05:41 IST" name="setUp" finished-at="2022-07-12T19:05:52 IST" duration-ms="10799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="goToPendingTimesheetReqTest()[pri:2, instance:com.tcw.testcases.DashboardTest@6b98a075]" started-at="2022-07-12T19:05:52 IST" name="goToPendingTimesheetReqTest" finished-at="2022-07-12T19:06:09 IST" duration-ms="17193" status="PASS">
+        <test-method signature="goToPendingTimesheetReqTest()[pri:2, instance:com.tcw.testcases.DashboardTest@544820b7]" started-at="2022-07-13T16:30:18 IST" name="goToPendingTimesheetReqTest" finished-at="2022-07-13T16:30:36 IST" duration-ms="18152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToPendingTimesheetReqTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@6b98a075]" started-at="2022-07-12T19:06:09 IST" name="tearDown" finished-at="2022-07-12T19:06:09 IST" duration-ms="367" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@544820b7]" started-at="2022-07-13T16:30:36 IST" name="tearDown" finished-at="2022-07-13T16:30:37 IST" duration-ms="1270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tcw.testcases.DashboardTest -->
-      <class name="com.tcw.testcases.PossibleClockInErrorsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PossibleClockInErrorsTest@35390ee3]" started-at="2022-07-12T19:06:37 IST" name="setUp" finished-at="2022-07-12T19:06:49 IST" duration-ms="11188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="possClockInErrListTest()[pri:0, instance:com.tcw.testcases.PossibleClockInErrorsTest@35390ee3]" started-at="2022-07-12T19:06:49 IST" name="possClockInErrListTest" finished-at="2022-07-12T19:07:09 IST" duration-ms="20243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- possClockInErrListTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PossibleClockInErrorsTest@35390ee3]" started-at="2022-07-12T19:07:09 IST" name="tearDown" finished-at="2022-07-12T19:07:09 IST" duration-ms="611" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tcw.testcases.PossibleClockInErrorsTest -->
       <class name="com.tcw.testcases.PendingTimesheetRequestsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@522a32b1]" started-at="2022-07-12T19:06:09 IST" name="setUp" finished-at="2022-07-12T19:06:20 IST" duration-ms="10962" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@56aaaecd]" started-at="2022-07-13T16:30:37 IST" name="setUp" finished-at="2022-07-13T16:30:49 IST" duration-ms="11524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingTimesheetRequestsTest@522a32b1]" started-at="2022-07-12T19:06:20 IST" name="timesheetRequestListTest" finished-at="2022-07-12T19:06:37 IST" duration-ms="16661" status="PASS">
+        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingTimesheetRequestsTest@56aaaecd]" started-at="2022-07-13T16:30:49 IST" name="timesheetRequestListTest" finished-at="2022-07-13T16:31:06 IST" duration-ms="17287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- timesheetRequestListTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@522a32b1]" started-at="2022-07-12T19:06:37 IST" name="tearDown" finished-at="2022-07-12T19:06:37 IST" duration-ms="478" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@56aaaecd]" started-at="2022-07-13T16:31:06 IST" name="tearDown" finished-at="2022-07-13T16:31:06 IST" duration-ms="436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tcw.testcases.PendingTimesheetRequestsTest -->
+      <class name="com.tcw.testcases.PendingAbsenceRequestsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingAbsenceRequestsTest@522a32b1]" started-at="2022-07-13T16:31:06 IST" name="setUp" finished-at="2022-07-13T16:31:18 IST" duration-ms="11565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingAbsenceRequestsTest@522a32b1]" started-at="2022-07-13T16:31:18 IST" name="timesheetRequestListTest" finished-at="2022-07-13T16:31:50 IST" duration-ms="32540" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//th[text()='Name']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-CRE3CMG', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cd2ee6ff550a32fc003ce5c99a8fc38, findElement {using=xpath, value=//th[text()='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60205}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60205/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cd2ee6ff550a32fc003ce5c99a8fc38]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//th[text()='Name']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-CRE3CMG', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cd2ee6ff550a32fc003ce5c99a8fc38, findElement {using=xpath, value=//th[text()='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60205}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60205/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cd2ee6ff550a32fc003ce5c99a8fc38
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+at com.tcw.pages.PendingAbsenceRequestsPage.absenceReqList(PendingAbsenceRequestsPage.java:42)
+at com.tcw.testcases.PendingAbsenceRequestsTest.timesheetRequestListTest(PendingAbsenceRequestsTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Capturing Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Jul_13_16_31_50_IST_2022.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Jul_13_16_31_50_IST_2022.jpg><img src=Wed_Jul_13_16_31_50_IST_2022.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- timesheetRequestListTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingAbsenceRequestsTest@522a32b1]" started-at="2022-07-13T16:31:51 IST" name="tearDown" finished-at="2022-07-13T16:31:51 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tcw.testcases.PendingAbsenceRequestsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

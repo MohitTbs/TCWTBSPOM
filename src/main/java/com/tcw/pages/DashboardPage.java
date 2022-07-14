@@ -18,9 +18,12 @@ public class DashboardPage extends BasePage {
 
 	@FindBy(xpath = "//div[contains(text(),'Pending Timesheet Requests')]")
 	public WebElement pendTsRqLink;
-	
-	@FindBy(xpath="//div[contains(text(),'Possible Clock In Errors')]")
+
+	@FindBy(xpath = "//div[contains(text(),'Possible Clock In Errors')]")
 	public WebElement possClockInErrLink;
+
+	@FindBy(xpath = "//*[text()='Pending Absence Requests']")
+	public WebElement penAbsReqLink;
 
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -38,19 +41,27 @@ public class DashboardPage extends BasePage {
 	}
 
 	public PendingTimesheetRequestsPage goToPendingTimesheetReq() {
-		
+
 		pendTsRqLink.click();
-		
+
 		return new PendingTimesheetRequestsPage(driver);
-		
+
 	}
-	
+
 	public PossibleClockInErrorsPage goToPossibleClockInErrorsPage() {
-		
+
 		possClockInErrLink.click();
-		
+
 		return new PossibleClockInErrorsPage(driver);
-		
+
+	}
+
+	public PendingAbsenceRequestsPage goToPendingAbsenceRequestsPage() {
+
+		penAbsReqLink.click();
+
+		return new PendingAbsenceRequestsPage(driver);
+
 	}
 
 }

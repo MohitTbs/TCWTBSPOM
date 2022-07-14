@@ -11,7 +11,7 @@ public class DashboardTest extends LogInTest {
 	DashboardPage dashp;
 	PendingTimesheetRequestsPage ptr;
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void addTaskTest() {
 
 		logIn();
