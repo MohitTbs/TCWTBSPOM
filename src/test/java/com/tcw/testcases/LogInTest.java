@@ -1,6 +1,5 @@
 package com.tcw.testcases;
 
-import org.testng.annotations.Test;
 import com.tcw.base.BasePage;
 import com.tcw.pages.DashboardPage;
 import com.tcw.pages.LoginPage;

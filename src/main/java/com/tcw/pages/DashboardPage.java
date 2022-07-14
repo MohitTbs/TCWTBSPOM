@@ -21,6 +21,9 @@ public class DashboardPage extends BasePage {
 
 	@FindBy(xpath = "//div[contains(text(),'Possible Clock In Errors')]")
 	public WebElement possClockInErrLink;
+	
+	@FindBy(xpath="//*[text()='Shift Switch Requests']")
+	public WebElement shiftSwitchReqLink;
 
 	@FindBy(xpath = "//*[text()='Pending Absence Requests']")
 	public WebElement penAbsReqLink;
@@ -61,6 +64,14 @@ public class DashboardPage extends BasePage {
 		penAbsReqLink.click();
 
 		return new PendingAbsenceRequestsPage(driver);
+
+	}
+	
+	public ShiftSwitchRequestsPage goToShiftSwitchRequestsPage() {
+
+		shiftSwitchReqLink.click();
+
+		return new ShiftSwitchRequestsPage(driver);
 
 	}
 

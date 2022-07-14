@@ -24,13 +24,13 @@ public class DashboardTest extends LogInTest {
 	@Test(priority = 2)
 	public void goToPendingTimesheetReqTest() {
 		logIn();
-		System.out.println("hello error 1");
+		//System.out.println("hello error 1");
 		ptr=new PendingTimesheetRequestsPage(driver);
-		System.out.println("hello error 2");
-		System.out.println(driver);
+		//System.out.println("hello error 2");
+		//System.out.println(driver);
 		dashp = new DashboardPage(driver);
 		ptr=dashp.goToPendingTimesheetReq();
-		System.out.println(driver);
+		//System.out.println(driver);
 		String tsReqSrchTtl1=ptr.tsReqSrchTtl.getText();
 		Assert.assertEquals(tsReqSrchTtl1, "TIMESHEETS REQUEST SEARCH");
 	}

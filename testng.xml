@@ -11,9 +11,10 @@
 
 	<test name="Test">
 		<classes>
-			<class name="com.tcw.testcases.DashboardTest" />
 			<class name="com.tcw.testcases.PendingTimesheetRequestsTest" />
 			<class name="com.tcw.testcases.PendingAbsenceRequestsTest" />
+			<class name="com.tcw.testcases.ShiftSwitchRequestsTest" />
+			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -8,8 +8,10 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -31,6 +33,17 @@ public class BasePage {
 	
 	
 
+	//Methods 
+	
+	public static void toWait() {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("divLoading")));
+		System.out.println("1");
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
+		System.out.println("2");
+	}
+	
 	
 	@BeforeSuite
 	public void settingTheLogs() {

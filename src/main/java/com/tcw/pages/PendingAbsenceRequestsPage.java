@@ -15,7 +15,7 @@ import com.tcw.base.BasePage;
 
 public class PendingAbsenceRequestsPage extends BasePage{
 	
-	@FindBy(xpath="//th[text()='Name']")
+	@FindBy(xpath="//th[text()='Name ']")
 	public WebElement abReqLstTtl;
 	
 	@FindBy(id="btnSearchtimesheet")
@@ -31,14 +31,10 @@ public class PendingAbsenceRequestsPage extends BasePage{
 	
 	
 	public String absenceReqList() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("divLoading")));
-		System.out.println("1");
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
-		System.out.println("2");
+		toWait();
 		act = new Actions(driver);
 		act.moveToElement(srchBtn).click().build().perform();
+		
 		System.out.println(abReqLstTtl.getText());
 		return abReqLstTtl.getText();
 		
