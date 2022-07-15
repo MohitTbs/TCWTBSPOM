@@ -11,10 +11,16 @@
 
 	<test name="Test">
 		<classes>
-			<class name="com.tcw.testcases.PendingTimesheetRequestsTest" />
-			<class name="com.tcw.testcases.PendingAbsenceRequestsTest" />
-			<class name="com.tcw.testcases.ShiftSwitchRequestsTest" />
+			
+			<class name="com.tcw.testcases.ClockedInNowTest" />
 			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
+
+
+
+
+

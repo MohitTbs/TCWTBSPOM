@@ -12,15 +12,7 @@ public class DashboardTest extends LogInTest {
 	PendingTimesheetRequestsPage ptr;
 
 	//@Test(priority = 1)
-	public void addTaskTest() {
-
-		logIn();
-
-		dashp = new DashboardPage(driver);
-		dashp.addTask();
-
-	}
-
+	
 	@Test(priority = 2)
 	public void goToPendingTimesheetReqTest() {
 		logIn();

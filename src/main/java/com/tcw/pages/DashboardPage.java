@@ -21,25 +21,31 @@ public class DashboardPage extends BasePage {
 
 	@FindBy(xpath = "//div[contains(text(),'Possible Clock In Errors')]")
 	public WebElement possClockInErrLink;
-	
-	@FindBy(xpath="//*[text()='Shift Switch Requests']")
+
+	@FindBy(xpath = "//*[text()='Shift Switch Requests']")
 	public WebElement shiftSwitchReqLink;
 
 	@FindBy(xpath = "//*[text()='Pending Absence Requests']")
 	public WebElement penAbsReqLink;
 
+	@FindBy(xpath = "//div[contains(text(),'Timesheets To Verify')]")
+	public WebElement tsToVerifyLink;
+	
+	@FindBy(xpath = "//div[contains(text(),'Reimbursement Requests')]")
+	public WebElement reimbReqLink;
+	
+	@FindBy(xpath = "//div[contains(text(),'Self Registration Requests')]")
+	public WebElement selfRegReqLink;
+	
+	@FindBy(xpath = "//div[text()='Scheduled Employees']")
+	public WebElement schEmpLink;
+	
+	@FindBy(xpath = "//div[text()='Clocked In Now']")
+	public WebElement clockedInNowLink;
+
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-
-	}
-
-	public void addTask() {
-		System.out.println(driver.getTitle());
-		log.info("Inside the addTaskBtn");
-		addTaskBtn.click();
-		wait.until(ExpectedConditions.elementToBeClickable(taskCloseBtn));
-		taskCloseBtn.click();
 
 	}
 
@@ -66,13 +72,48 @@ public class DashboardPage extends BasePage {
 		return new PendingAbsenceRequestsPage(driver);
 
 	}
-	
+
 	public ShiftSwitchRequestsPage goToShiftSwitchRequestsPage() {
 
 		shiftSwitchReqLink.click();
 
 		return new ShiftSwitchRequestsPage(driver);
 
+	}
+
+	public TimesheetsToVerifyPage goToTimesheetsToVerifyPage() {
+
+		tsToVerifyLink.click();
+
+		return new TimesheetsToVerifyPage(driver);
+	}
+	
+	public ReimbursementRequestsPage goToReimbursementRequestsPage() {
+
+		reimbReqLink.click();
+
+		return new ReimbursementRequestsPage(driver);
+	}
+
+	public SelfRegistrationRequestsPage goToSelfRegistrationRequestsPage() {
+
+		selfRegReqLink.click();
+
+		return new SelfRegistrationRequestsPage(driver);
+	}
+	
+	public ScheduledEmployeesPage goToScheduledEmployeesPage() {
+
+		schEmpLink.click();
+
+		return new ScheduledEmployeesPage(driver);
+	}
+	
+	public ClockedInNowPage goToClockedInNowPage() {
+
+		clockedInNowLink.click();
+
+		return new ClockedInNowPage(driver);
 	}
 
 }

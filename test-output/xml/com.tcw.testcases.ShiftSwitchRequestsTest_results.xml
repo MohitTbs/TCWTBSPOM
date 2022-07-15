@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="23.076">
+           time="21.063">
   <properties />
   
   
-            <testcase name="switchScheduleReqTest" time="23.076" classname="com.tcw.testcases.ShiftSwitchRequestsTest" />
+            <testcase name="switchScheduleReqTest" time="21.063" classname="com.tcw.testcases.ShiftSwitchRequestsTest" />
       
 </testsuite>

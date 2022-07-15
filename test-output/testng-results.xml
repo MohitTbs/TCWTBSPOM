@@ -1,57 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+<testng-results ignored="8" total="17" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-14T18:24:38 IST" name="Suite" finished-at="2022-07-14T18:27:11 IST" duration-ms="152650">
+  <suite started-at="2022-07-15T18:41:05 IST" name="Suite" finished-at="2022-07-15T18:46:24 IST" duration-ms="318872">
     <groups>
     </groups>
-    <test started-at="2022-07-14T18:24:38 IST" name="Test" finished-at="2022-07-14T18:27:11 IST" duration-ms="152650">
-      <class name="com.tcw.testcases.ShiftSwitchRequestsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.ShiftSwitchRequestsTest@522a32b1]" started-at="2022-07-14T18:26:35 IST" name="setUp" finished-at="2022-07-14T18:26:47 IST" duration-ms="11957" status="PASS">
+    <test started-at="2022-07-15T18:41:05 IST" name="Test" finished-at="2022-07-15T18:46:24 IST" duration-ms="318872">
+      <class name="com.tcw.testcases.ClockedInNowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.ClockedInNowTest@3a1dd365]" started-at="2022-07-15T18:45:49 IST" name="setUp" finished-at="2022-07-15T18:46:00 IST" duration-ms="10853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="switchScheduleReqTest()[pri:1, instance:com.tcw.testcases.ShiftSwitchRequestsTest@522a32b1]" started-at="2022-07-14T18:26:47 IST" name="switchScheduleReqTest" finished-at="2022-07-14T18:27:10 IST" duration-ms="23076" status="PASS">
+        <test-method signature="clockedInNowTest()[pri:1, instance:com.tcw.testcases.ClockedInNowTest@3a1dd365]" started-at="2022-07-15T18:46:00 IST" name="clockedInNowTest" finished-at="2022-07-15T18:46:24 IST" duration-ms="24061" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- switchScheduleReqTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.ShiftSwitchRequestsTest@522a32b1]" started-at="2022-07-14T18:27:10 IST" name="tearDown" finished-at="2022-07-14T18:27:11 IST" duration-ms="384" status="PASS">
+        </test-method> <!-- clockedInNowTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.ClockedInNowTest@3a1dd365]" started-at="2022-07-15T18:46:24 IST" name="tearDown" finished-at="2022-07-15T18:46:24 IST" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tcw.testcases.ShiftSwitchRequestsTest -->
-      <class name="com.tcw.testcases.PendingTimesheetRequestsTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@544820b7]" started-at="2022-07-14T18:24:38 IST" name="settingTheLogs" finished-at="2022-07-14T18:24:38 IST" duration-ms="35" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@544820b7]" started-at="2022-07-14T18:24:38 IST" name="setUp" finished-at="2022-07-14T18:24:51 IST" duration-ms="13293" status="PASS">
+      </class> <!-- com.tcw.testcases.ClockedInNowTest -->
+      <class name="com.tcw.testcases.ReimbursementRequestsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.ReimbursementRequestsTest@235a0c16]" started-at="2022-07-15T18:43:57 IST" name="setUp" finished-at="2022-07-15T18:44:08 IST" duration-ms="11724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingTimesheetRequestsTest@544820b7]" started-at="2022-07-14T18:24:51 IST" name="timesheetRequestListTest" finished-at="2022-07-14T18:26:03 IST" duration-ms="71041" status="PASS">
+        <test-method signature="reimReqSrcTest()[pri:1, instance:com.tcw.testcases.ReimbursementRequestsTest@235a0c16]" started-at="2022-07-15T18:44:08 IST" name="reimReqSrcTest" finished-at="2022-07-15T18:44:40 IST" duration-ms="31441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reimReqSrcTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.ReimbursementRequestsTest@235a0c16]" started-at="2022-07-15T18:44:40 IST" name="tearDown" finished-at="2022-07-15T18:44:40 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tcw.testcases.ReimbursementRequestsTest -->
+      <class name="com.tcw.testcases.ScheduledEmployeesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.ScheduledEmployeesTest@6b7906b3]" started-at="2022-07-15T18:45:12 IST" name="setUp" finished-at="2022-07-15T18:45:24 IST" duration-ms="11700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="daySchTest()[pri:1, instance:com.tcw.testcases.ScheduledEmployeesTest@6b7906b3]" started-at="2022-07-15T18:45:24 IST" name="daySchTest" finished-at="2022-07-15T18:45:47 IST" duration-ms="23531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- daySchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.ScheduledEmployeesTest@6b7906b3]" started-at="2022-07-15T18:45:47 IST" name="tearDown" finished-at="2022-07-15T18:45:49 IST" duration-ms="1216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tcw.testcases.ScheduledEmployeesTest -->
+      <class name="com.tcw.testcases.PossibleClockInErrorsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PossibleClockInErrorsTest@4b9df8a]" started-at="2022-07-15T18:41:37 IST" name="setUp" finished-at="2022-07-15T18:41:49 IST" duration-ms="11759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="possClockInErrListTest()[pri:0, instance:com.tcw.testcases.PossibleClockInErrorsTest@4b9df8a]" started-at="2022-07-15T18:41:49 IST" name="possClockInErrListTest" finished-at="2022-07-15T18:42:07 IST" duration-ms="18455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- possClockInErrListTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PossibleClockInErrorsTest@4b9df8a]" started-at="2022-07-15T18:42:07 IST" name="tearDown" finished-at="2022-07-15T18:42:09 IST" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tcw.testcases.PossibleClockInErrorsTest -->
+      <class name="com.tcw.testcases.PendingTimesheetRequestsTest">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@5ee2b6f9]" started-at="2022-07-15T18:41:05 IST" name="settingTheLogs" finished-at="2022-07-15T18:41:05 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingTheLogs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@5ee2b6f9]" started-at="2022-07-15T18:41:05 IST" name="setUp" finished-at="2022-07-15T18:41:18 IST" duration-ms="13181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingTimesheetRequestsTest@5ee2b6f9]" started-at="2022-07-15T18:41:18 IST" name="timesheetRequestListTest" finished-at="2022-07-15T18:41:36 IST" duration-ms="18100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- timesheetRequestListTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@544820b7]" started-at="2022-07-14T18:26:03 IST" name="tearDown" finished-at="2022-07-14T18:26:03 IST" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingTimesheetRequestsTest@5ee2b6f9]" started-at="2022-07-15T18:41:36 IST" name="tearDown" finished-at="2022-07-15T18:41:37 IST" duration-ms="579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tcw.testcases.PendingTimesheetRequestsTest -->
-      <class name="com.tcw.testcases.PendingAbsenceRequestsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingAbsenceRequestsTest@56aaaecd]" started-at="2022-07-14T18:26:03 IST" name="setUp" finished-at="2022-07-14T18:26:15 IST" duration-ms="12243" status="PASS">
+      <class name="com.tcw.testcases.ShiftSwitchRequestsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.ShiftSwitchRequestsTest@aafcffa]" started-at="2022-07-15T18:42:46 IST" name="setUp" finished-at="2022-07-15T18:42:57 IST" duration-ms="10890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingAbsenceRequestsTest@56aaaecd]" started-at="2022-07-14T18:26:15 IST" name="timesheetRequestListTest" finished-at="2022-07-14T18:26:35 IST" duration-ms="19799" status="PASS">
+        <test-method signature="switchScheduleReqTest()[pri:1, instance:com.tcw.testcases.ShiftSwitchRequestsTest@aafcffa]" started-at="2022-07-15T18:42:57 IST" name="switchScheduleReqTest" finished-at="2022-07-15T18:43:18 IST" duration-ms="21063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchScheduleReqTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.ShiftSwitchRequestsTest@aafcffa]" started-at="2022-07-15T18:43:18 IST" name="tearDown" finished-at="2022-07-15T18:43:19 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tcw.testcases.ShiftSwitchRequestsTest -->
+      <class name="com.tcw.testcases.SelfRegistrationRequestsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.SelfRegistrationRequestsTest@2b5f4d54]" started-at="2022-07-15T18:44:40 IST" name="setUp" finished-at="2022-07-15T18:44:52 IST" duration-ms="11620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="selfRegUserTest()[pri:1, instance:com.tcw.testcases.SelfRegistrationRequestsTest@2b5f4d54]" started-at="2022-07-15T18:44:52 IST" name="selfRegUserTest" finished-at="2022-07-15T18:45:12 IST" duration-ms="19900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selfRegUserTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.SelfRegistrationRequestsTest@2b5f4d54]" started-at="2022-07-15T18:45:12 IST" name="tearDown" finished-at="2022-07-15T18:45:12 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tcw.testcases.SelfRegistrationRequestsTest -->
+      <class name="com.tcw.testcases.PendingAbsenceRequestsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.PendingAbsenceRequestsTest@5e8ac0e1]" started-at="2022-07-15T18:42:09 IST" name="setUp" finished-at="2022-07-15T18:42:20 IST" duration-ms="11723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="timesheetRequestListTest()[pri:1, instance:com.tcw.testcases.PendingAbsenceRequestsTest@5e8ac0e1]" started-at="2022-07-15T18:42:20 IST" name="timesheetRequestListTest" finished-at="2022-07-15T18:42:46 IST" duration-ms="25536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- timesheetRequestListTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingAbsenceRequestsTest@56aaaecd]" started-at="2022-07-14T18:26:35 IST" name="tearDown" finished-at="2022-07-14T18:26:35 IST" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.PendingAbsenceRequestsTest@5e8ac0e1]" started-at="2022-07-15T18:42:46 IST" name="tearDown" finished-at="2022-07-15T18:42:46 IST" duration-ms="674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tcw.testcases.PendingAbsenceRequestsTest -->
+      <class name="com.tcw.testcases.TimesheetsToVerifyTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.TimesheetsToVerifyTest@6955cb39]" started-at="2022-07-15T18:43:19 IST" name="setUp" finished-at="2022-07-15T18:43:31 IST" duration-ms="11701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifiedClockInTest()[pri:1, instance:com.tcw.testcases.TimesheetsToVerifyTest@6955cb39]" started-at="2022-07-15T18:43:31 IST" name="verifiedClockInTest" finished-at="2022-07-15T18:43:55 IST" duration-ms="24867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifiedClockInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.TimesheetsToVerifyTest@6955cb39]" started-at="2022-07-15T18:43:55 IST" name="tearDown" finished-at="2022-07-15T18:43:57 IST" duration-ms="1215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tcw.testcases.TimesheetsToVerifyTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
