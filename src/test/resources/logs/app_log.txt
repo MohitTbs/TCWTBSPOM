@@ -1,27 +1,3 @@
-INFO    2022-07-15 18:41:05,706 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:41:08,666 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:41:18,903 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-15 18:41:37,581 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:41:38,760 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:41:49,343 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-15 18:42:09,037 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:42:10,176 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:42:20,763 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-15 18:42:46,973 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:42:48,109 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:42:57,865 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-15 18:43:19,337 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:43:20,435 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:43:31,047 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-15 18:43:57,121 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:43:58,293 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:44:08,852 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-15 18:44:40,762 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:44:41,870 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:44:52,391 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-15 18:45:12,751 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:45:13,880 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:45:24,453 [main] com.tcw.base.BasePage  - In login 2
-INFO    2022-07-15 18:45:49,201 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-07-15 18:45:50,380 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-07-15 18:46:00,056 [main] com.tcw.base.BasePage  - In login 2
+INFO    2022-07-18 18:52:33,196 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
+INFO    2022-07-18 18:52:35,935 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
+INFO    2022-07-18 18:52:45,775 [main] com.tcw.base.BasePage  - In login 2

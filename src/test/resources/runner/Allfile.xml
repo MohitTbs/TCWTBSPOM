@@ -20,6 +20,8 @@
 			<class name="com.tcw.testcases.SelfRegistrationRequestsTest" />
 			<class name="com.tcw.testcases.ScheduledEmployeesTest" />
 			<class name="com.tcw.testcases.ClockedInNowTest" />
+			<class name="com.tcw.testcases.EmployeesClockedInTodayTest" />
+			<class name="com.tcw.testcases.NotClockedInNowTest" />
 
 		</classes>
 	</test> <!-- Test -->

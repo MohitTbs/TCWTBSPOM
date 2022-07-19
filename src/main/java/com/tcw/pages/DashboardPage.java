@@ -42,6 +42,12 @@ public class DashboardPage extends BasePage {
 	
 	@FindBy(xpath = "//div[text()='Clocked In Now']")
 	public WebElement clockedInNowLink;
+	
+	@FindBy(xpath = "//div[text()='Employees Clocked In Today']")
+	public WebElement empClockTodayLink;
+	
+	@FindBy(xpath = "//div[text()='Not Clocked In Now']")
+	public WebElement notClockedLink;
 
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -114,6 +120,20 @@ public class DashboardPage extends BasePage {
 		clockedInNowLink.click();
 
 		return new ClockedInNowPage(driver);
+	}
+	
+	public EmployeesClockedInTodayPage goToEmployeesClockedInTodayPage() {
+
+		empClockTodayLink.click();
+
+		return new EmployeesClockedInTodayPage(driver);
+	}
+	
+	public NotClockedInNowPage goToNotClockedInNowPage() {
+
+		notClockedLink.click();
+
+		return new NotClockedInNowPage(driver);
 	}
 
 }
