@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="20.510">
+           time="26.786">
   <properties />
   
   
-            <testcase name="possClockInErrListTest" time="20.510" classname="com.tcw.testcases.PossibleClockInErrorsTest" />
+            <testcase name="notClockedInTest" time="26.786" classname="com.tcw.testcases.NotClockedInNowTest" />
       
 </testsuite>

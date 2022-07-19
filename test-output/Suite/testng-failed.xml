@@ -8,14 +8,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tcw.testcases.ClockedInNowTest">
+      <class name="com.tcw.testcases.PendingTimesheetRequestsTest">
         <methods>
           <include name="tearDown"/>
           <include name="settingTheLogs"/>
+          <include name="timesheetRequestListTest"/>
           <include name="setUp"/>
-          <include name="clockedInNowTest"/>
         </methods>
-      </class> <!-- com.tcw.testcases.ClockedInNowTest -->
+      </class> <!-- com.tcw.testcases.PendingTimesheetRequestsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

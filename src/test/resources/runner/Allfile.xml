@@ -22,6 +22,7 @@
 			<class name="com.tcw.testcases.ClockedInNowTest" />
 			<class name="com.tcw.testcases.EmployeesClockedInTodayTest" />
 			<class name="com.tcw.testcases.NotClockedInNowTest" />
+			<class name="com.tcw.testcases.LiveStreamTest" />
 
 		</classes>
 	</test> <!-- Test -->

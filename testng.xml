@@ -12,7 +12,7 @@
 	<test name="Test">
 		<classes>
 			
-			<class name="com.tcw.testcases.ClockedInNowTest" />
+			<class name="com.tcw.testcases.LiveStreamTest" />
 			
 		</classes>
 	</test> <!-- Test -->

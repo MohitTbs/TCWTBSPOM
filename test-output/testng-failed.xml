@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tcw.testcases.EmployeesClockedInTodayTest">
+      <class name="com.tcw.testcases.LiveStreamTest">
         <methods>
           <include name="tearDown"/>
-          <include name="timesheetSrchTest"/>
           <include name="settingTheLogs"/>
           <include name="setUp"/>
+          <include name="liveStreamTest"/>
         </methods>
-      </class> <!-- com.tcw.testcases.EmployeesClockedInTodayTest -->
+      </class> <!-- com.tcw.testcases.LiveStreamTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

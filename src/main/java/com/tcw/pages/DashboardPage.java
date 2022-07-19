@@ -2,9 +2,9 @@ package com.tcw.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.tcw.base.BasePage;
 
@@ -48,6 +48,12 @@ public class DashboardPage extends BasePage {
 	
 	@FindBy(xpath = "//div[text()='Not Clocked In Now']")
 	public WebElement notClockedLink;
+	
+	@FindBy(id = "livestream_link")
+	public WebElement liveStreamLink;
+	
+	@FindBy(xpath = "//a[@class='livestream_link']")
+	public WebElement liveStreamMore;
 
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -134,6 +140,16 @@ public class DashboardPage extends BasePage {
 		notClockedLink.click();
 
 		return new NotClockedInNowPage(driver);
+	}
+	
+	public LiveStreamPage goToLiveStreamPage() {
+
+		liveStreamLink.click();
+		toWait();
+		Actions act = new Actions(driver);
+		act.moveToElement(liveStreamMore).click().build().perform();
+
+		return new LiveStreamPage(driver);
 	}
 
 }

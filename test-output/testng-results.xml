@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-18T18:52:33 IST" name="Default suite" finished-at="2022-07-18T18:53:06 IST" duration-ms="33404">
+  <suite started-at="2022-07-19T18:05:48 IST" name="Default suite" finished-at="2022-07-19T18:06:25 IST" duration-ms="37145">
     <groups>
     </groups>
-    <test started-at="2022-07-18T18:52:33 IST" name="Default test" finished-at="2022-07-18T18:53:06 IST" duration-ms="33404">
-      <class name="com.tcw.testcases.NotClockedInNowTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.NotClockedInNowTest@74a6f9c1]" started-at="2022-07-18T18:52:33 IST" name="settingTheLogs" finished-at="2022-07-18T18:52:33 IST" duration-ms="50" status="PASS">
+    <test started-at="2022-07-19T18:05:48 IST" name="Default test" finished-at="2022-07-19T18:06:25 IST" duration-ms="37145">
+      <class name="com.tcw.testcases.LiveStreamTest">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.LiveStreamTest@74a6f9c1]" started-at="2022-07-19T18:05:48 IST" name="settingTheLogs" finished-at="2022-07-19T18:05:48 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.NotClockedInNowTest@74a6f9c1]" started-at="2022-07-18T18:52:33 IST" name="setUp" finished-at="2022-07-18T18:52:45 IST" duration-ms="12565" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.LiveStreamTest@74a6f9c1]" started-at="2022-07-19T18:05:48 IST" name="setUp" finished-at="2022-07-19T18:06:01 IST" duration-ms="13454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="notClockedInTest()[pri:1, instance:com.tcw.testcases.NotClockedInNowTest@74a6f9c1]" started-at="2022-07-18T18:52:45 IST" name="notClockedInTest" finished-at="2022-07-18T18:53:06 IST" duration-ms="20375" status="PASS">
+        <test-method signature="liveStreamTest()[pri:1, instance:com.tcw.testcases.LiveStreamTest@74a6f9c1]" started-at="2022-07-19T18:06:01 IST" name="liveStreamTest" finished-at="2022-07-19T18:06:24 IST" duration-ms="22964" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- notClockedInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.NotClockedInNowTest@74a6f9c1]" started-at="2022-07-18T18:53:06 IST" name="tearDown" finished-at="2022-07-18T18:53:06 IST" duration-ms="422" status="PASS">
+        </test-method> <!-- liveStreamTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.LiveStreamTest@74a6f9c1]" started-at="2022-07-19T18:06:24 IST" name="tearDown" finished-at="2022-07-19T18:06:25 IST" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tcw.testcases.NotClockedInNowTest -->
+      </class> <!-- com.tcw.testcases.LiveStreamTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
