@@ -1,5 +1,6 @@
 package com.tcw.pages;
 
+import java.util.Hashtable;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -53,11 +54,11 @@ public class TasksPage extends BasePage {
 
 	}
 
-	public void addActualTask(String task, String description) {
+	public void addActualTask(Hashtable<String,String> data) {
 		toWait();
 		act = new Actions(driver);
 		act.moveToElement(addTaskBtn).click().build().perform();
-		taskNameBx.sendKeys(task);
+		taskNameBx.sendKeys(data.get("task"));
 		empDrpDwn.click();
 		for (WebElement emp : empSelList) {
 			if (emp.getText().equalsIgnoreCase("Jay Z")) {
@@ -66,7 +67,7 @@ public class TasksPage extends BasePage {
 			}
 		}
 		dueDate.click();
-		descriptionBx.sendKeys(description);
+		descriptionBx.sendKeys(data.get("description"));
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
