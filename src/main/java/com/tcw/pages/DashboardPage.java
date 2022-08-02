@@ -54,6 +54,9 @@ public class DashboardPage extends BasePage {
 	
 	@FindBy(xpath = "//a[@class='livestream_link']")
 	public WebElement liveStreamMore;
+	
+	@FindBy(xpath = "//span[@class='sidebar_menu_link' and text()='Timesheet']")
+	public WebElement timesheetPageLink;
 
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -150,6 +153,13 @@ public class DashboardPage extends BasePage {
 		act.moveToElement(liveStreamMore).click().build().perform();
 
 		return new LiveStreamPage(driver);
+	}
+	
+	public TimesheetPage goToTimesheetPage() {
+
+		timesheetPageLink.click();
+
+		return new TimesheetPage(driver);
 	}
 
 }
