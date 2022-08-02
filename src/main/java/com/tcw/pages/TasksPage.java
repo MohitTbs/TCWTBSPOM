@@ -53,11 +53,11 @@ public class TasksPage extends BasePage {
 
 	}
 
-	public void addActualTask() {
+	public void addActualTask(String task, String description) {
 		toWait();
 		act = new Actions(driver);
 		act.moveToElement(addTaskBtn).click().build().perform();
-		taskNameBx.sendKeys("Null Values");
+		taskNameBx.sendKeys(task);
 		empDrpDwn.click();
 		for (WebElement emp : empSelList) {
 			if (emp.getText().equalsIgnoreCase("Jay Z")) {
@@ -66,7 +66,7 @@ public class TasksPage extends BasePage {
 			}
 		}
 		dueDate.click();
-		descriptionBx.sendKeys("Automation Script");
+		descriptionBx.sendKeys(description);
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

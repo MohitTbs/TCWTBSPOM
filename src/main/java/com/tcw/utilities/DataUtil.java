@@ -16,7 +16,7 @@ public class DataUtil extends BasePage {
 
 		String sheetName = m.getName();
 		excel = new ExcelReader(
-				System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\TCWExcelFile.xlsx");
+				System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\TCWPOMFILE.xlsx");
 
 		int rows = excel.getRowCount(sheetName);
 		int cols = excel.getColumnCount(sheetName);
@@ -39,7 +39,7 @@ public class DataUtil extends BasePage {
 
 		String sheetName = m.getName();
 		excel = new ExcelReader(
-				System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\TCWExcelFile.xlsx");
+				System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\TCWPOMFILE.xlsx");
 
 		int rows = excel.getRowCount(sheetName);
 		int cols = excel.getColumnCount(sheetName);
