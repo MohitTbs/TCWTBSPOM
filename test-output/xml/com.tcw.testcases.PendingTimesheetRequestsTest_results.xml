@@ -1,90 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
            tests="1"
-           failures="1"
+           failures="0"
            errors="0"
            skipped="0"
-           time="4.187">
+           time="17.313">
   <properties />
-            <testcase name="timesheetRequestListTest" time="4.187" classname="com.tcw.testcases.PendingTimesheetRequestsTest">
-                <failure type="org.openqa.selenium.WebDriverException"
-                  message="unknown error: cannot determine loading status
-from unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.114)
-Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c8f7df437eb452dd46ca15ae3c45d303, clickElement {id=ff296883-16cc-4b20-a54d-c3ab6cbc8598}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56889}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56889/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c8f7df437eb452dd46ca15ae3c45d303)] -&gt; xpath: //div//button[@value=&apos;LogIn&apos;]]
-Session ID: c8f7df437eb452dd46ca15ae3c45d303"
-              >
-<![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.114)
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-CRE3CMG', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c8f7df437eb452dd46ca15ae3c45d303, clickElement {id=ff296883-16cc-4b20-a54d-c3ab6cbc8598}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56889}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56889/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c8f7df437eb452dd46ca15ae3c45d303)] -> xpath: //div//button[@value='LogIn']]
-Session ID: c8f7df437eb452dd46ca15ae3c45d303
-  java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-  java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.base/java.lang.reflect.Method.invoke(Method.java:568)
-  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-  jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-  com.tcw.pages.LoginPage.loginIn(LoginPage.java:48)
-  com.tcw.testcases.LogInTest.logIn(LogInTest.java:23)
-  com.tcw.testcases.PendingTimesheetRequestsTest.timesheetRequestListTest(PendingTimesheetRequestsTest.java:16)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.base/java.lang.reflect.Method.invoke(Method.java:568)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-  org.testng.TestRunner.privateRun(TestRunner.java:794)
-  org.testng.TestRunner.run(TestRunner.java:596)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-  org.testng.SuiteRunner.run(SuiteRunner.java:276)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-  org.testng.TestNG.runSuites(TestNG.java:1063)
-  org.testng.TestNG.run(TestNG.java:1031)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
   
   
-  
+            <testcase name="timesheetRequestListTest" time="17.313" classname="com.tcw.testcases.PendingTimesheetRequestsTest" />
+      
 </testsuite>

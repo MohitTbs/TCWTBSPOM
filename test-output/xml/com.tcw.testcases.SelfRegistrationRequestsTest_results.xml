@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="20.295">
+           time="19.633">
   <properties />
   
   
-            <testcase name="selfRegUserTest" time="20.295" classname="com.tcw.testcases.SelfRegistrationRequestsTest" />
+            <testcase name="selfRegUserTest" time="19.633" classname="com.tcw.testcases.SelfRegistrationRequestsTest" />
       
 </testsuite>

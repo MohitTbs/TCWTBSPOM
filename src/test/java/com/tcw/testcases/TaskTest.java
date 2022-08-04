@@ -21,7 +21,7 @@ public class TaskTest extends LogInTest {
 		//Assert.assertEquals(taskPageTtl1, "Tasks");
 		String succMsg1 = tp.addActualTask(data);
 		Assert.assertEquals(succMsg1, "Information saved successfully.");
-
+		
 	}
 
 }

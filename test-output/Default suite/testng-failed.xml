@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tcw.testcases.TaskTest">
+      <class name="com.tcw.testcases.PayrollTest">
         <methods>
           <include name="tearDown"/>
           <include name="settingTheLogs"/>
           <include name="setUp"/>
-          <include name="addTaskTest"/>
+          <include name="landingOnPayrollPage"/>
         </methods>
-      </class> <!-- com.tcw.testcases.TaskTest -->
+      </class> <!-- com.tcw.testcases.PayrollTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

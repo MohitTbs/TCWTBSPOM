@@ -8,26 +8,27 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.tcw.base.BasePage;
 
-public class SettingsPage extends BasePage {
+public class PayrollPage extends BasePage {
 
-	@FindBy(xpath="//span[@class='sidebar_menu_link' and contains(text(),'Settings')]")
-	WebElement settLnk;
+	@FindBy(xpath="//span[@class='sidebar_menu_link' and contains(text(),'Payroll')]")
+	WebElement payrollLnk;
 	
 	@FindBy(xpath="//div[@id='site_name']//h1")
-	WebElement settTtl;
+	WebElement payrollTtl;
 	
 	Actions act;
 	
-	public SettingsPage(WebDriver driver) {
+	public PayrollPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
+		
+		
 	}
 	
-	public String goToSettingsPage() {
-		act = new Actions(driver);
-		act.moveToElement(settLnk).click().build().perform();
+	public String goToPayrollPage() {
+		act=new Actions(driver);
+		act.moveToElement(payrollLnk).click().build().perform();
 		toWait();
-		return settTtl.getText();
+		return payrollTtl.getText();
 	}
-	
 }
