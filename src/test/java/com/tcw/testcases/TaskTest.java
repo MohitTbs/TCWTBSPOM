@@ -2,6 +2,7 @@ package com.tcw.testcases;
 
 import java.util.Hashtable;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tcw.pages.TasksPage;
@@ -18,7 +19,8 @@ public class TaskTest extends LogInTest {
 		String taskPageTtl1 = tp.goToTaskPage();
 		System.out.println(taskPageTtl1);
 		//Assert.assertEquals(taskPageTtl1, "Tasks");
-		tp.addActualTask(data);
+		String succMsg1 = tp.addActualTask(data);
+		Assert.assertEquals(succMsg1, "Information saved successfully.");
 
 	}
 

@@ -3,6 +3,7 @@ package com.tcw.pages;
 import java.util.Hashtable;
 import java.util.List;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -39,6 +40,12 @@ public class TasksPage extends BasePage {
 
 	@FindBy(id = "btn_saveTask")
 	public WebElement saveBtn;
+	
+	@FindBy(xpath="(//div[@class='sel']//a[contains(text(),'Close')])[1]")
+	public WebElement closeBtn;
+	
+	@FindBy(id="jSuccess")
+	public WebElement succMsg;
 
 	Actions act;
 
@@ -54,26 +61,32 @@ public class TasksPage extends BasePage {
 
 	}
 
-	public void addActualTask(Hashtable<String,String> data) {
+	public String addActualTask(Hashtable<String,String> data) {
 		toWait();
 		act = new Actions(driver);
 		act.moveToElement(addTaskBtn).click().build().perform();
 		taskNameBx.sendKeys(data.get("task"));
 		empDrpDwn.click();
 		for (WebElement emp : empSelList) {
-			if (emp.getText().equalsIgnoreCase("Jay Z")) {
+			if (emp.getText().equalsIgnoreCase(data.get("emp"))) {
 				emp.click();
 				break;
 			}
 		}
 		dueDate.click();
 		descriptionBx.sendKeys(data.get("description"));
+		
+		saveBtn.click();
+		
 		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			return succMsg.getText();
+			
+			
+		}catch(NoSuchElementException e) {
+			return null;
 		}
+		
+		
 
 	}
 }
