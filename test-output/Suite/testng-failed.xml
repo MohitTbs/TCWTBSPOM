@@ -16,6 +16,14 @@
           <include name="liveStreamTest"/>
         </methods>
       </class> <!-- com.tcw.testcases.LiveStreamTest -->
+      <class name="com.tcw.testcases.TaskTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="settingTheLogs"/>
+          <include name="setUp"/>
+          <include name="addTaskTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.tcw.testcases.TaskTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

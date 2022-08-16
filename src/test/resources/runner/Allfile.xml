@@ -24,6 +24,14 @@
 			<class name="com.tcw.testcases.NotClockedInNowTest" />
 			<class name="com.tcw.testcases.LiveStreamTest" />
 			<class name="com.tcw.testcases.TimesheetTest" />
+			<class name="com.tcw.testcases.ScheduleTest" />
+			<class name="com.tcw.testcases.EmployeeTest" />
+			<class name="com.tcw.testcases.PayrollTest" />
+			<class name="com.tcw.testcases.TaskTest" />
+			<class name="com.tcw.testcases.SettingsTest" />
+			<class name="com.tcw.testcases.ReportsTest" />
+			<class name="com.tcw.testcases.PaymentTest" />
+			<class name="com.tcw.testcases.SupportTest" />
 
 		</classes>
 	</test> <!-- Test -->
