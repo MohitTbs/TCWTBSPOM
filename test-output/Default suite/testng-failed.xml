@@ -6,9 +6,9 @@
       <class name="com.tcw.testcases.TimesheetTest">
         <methods>
           <include name="tearDown"/>
-          <include name="addTimeSheetTest" invocation-numbers="0"/>
           <include name="settingTheLogs"/>
           <include name="setUp"/>
+          <include name="addAbsenceTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tcw.testcases.TimesheetTest -->
     </classes>
