@@ -105,6 +105,7 @@ public class TimesheetPage extends BasePage {
 		PageFactory.initElements(driver, this);
 
 	}
+
 	// Landing on the Timesheet Page
 	public String tsPageHit() {
 		toWait();
@@ -112,7 +113,7 @@ public class TimesheetPage extends BasePage {
 	}
 
 	// Adding the Timesheet
-	public void addTimeRecord(Hashtable<String, String> data) {
+	public String addTimeRecord(Hashtable<String, String> data) {
 		act = new Actions(driver);
 		act.moveToElement(addTimeRecordBtn).click().build().perform();
 
@@ -135,28 +136,39 @@ public class TimesheetPage extends BasePage {
 		clockInTime.sendKeys(data.get("clockInTime"));
 		clockOutTime.clear();
 		clockOutTime.sendKeys(data.get("clockOutTime"));
-		Select selectAddTimeLocation = new Select(addTimeLocation);
-		selectAddTimeLocation.selectByVisibleText(data.get("addTimeLocation"));
-		Select selectAddTimeJob = new Select(addTimeJob);
-		selectAddTimeJob.selectByVisibleText(data.get("addTimeJob"));
+
+		try {
+			Select selectAddTimeLocation = new Select(addTimeLocation);
+			selectAddTimeLocation.selectByVisibleText(data.get("addTimeLocation"));
+		} catch (NoSuchElementException p) {
+
+		}
+		try {
+			Select selectAddTimeJob = new Select(addTimeJob);
+			selectAddTimeJob.selectByVisibleText(data.get("addTimeJob"));
+		} catch (NoSuchElementException o) {
+
+		}
 		addTimeNotes.sendKeys(data.get("addTimeNotes"));
 		addTimeRecordSaveBtn.click();
 		try {
 
 			String msg = successMsg.getText();
-			System.out.println(msg);
+			return msg;
+
 		} catch (NoSuchElementException e) {
 			try {
 				String msg = tsOverlapMsg.getText();
-				System.out.println(msg);
+				return msg;
 			} catch (NoSuchElementException i) {
-				i.printStackTrace();
+				return "";
 			}
 		}
 
 	}
+
 	// Adding the Absence
-	public void addTimeOff(Hashtable<String, String> data) {
+	public String addTimeOff(Hashtable<String, String> data) {
 		act = new Actions(driver);
 		act.moveToElement(addTimeOffBtn).click().build().perform();
 		Select selectEmpDrpDwn = new Select(absenceEmpDrpDwn);
@@ -171,21 +183,32 @@ public class TimesheetPage extends BasePage {
 		absenceStTime.sendKeys(data.get("absenceStTime"));
 		absenceEndTime.clear();
 		absenceEndTime.sendKeys(data.get("absenceEndTime"));
-		Select selectAbsenceLocation = new Select(absenceLocation);
-		selectAbsenceLocation.selectByVisibleText(data.get("absenceLocation"));
-		Select selectAbsenceJob = new Select(absenceJob);
-		selectAbsenceJob.selectByVisibleText(data.get("absenceJob"));
+		try {
+			Select selectAbsenceLocation = new Select(absenceLocation);
+			selectAbsenceLocation.selectByVisibleText(data.get("absenceLocation"));
+		} catch (NoSuchElementException e) {
+
+		}
+		try {
+			Select selectAbsenceJob = new Select(absenceJob);
+			selectAbsenceJob.selectByVisibleText(data.get("absenceJob"));
+		} catch (NoSuchElementException p) {
+
+		}
 		absenceNotes.sendKeys(data.get("absenceNotes"));
 		addAbsencesBtn.click();
 		try {
 			String msg = successMsg.getText();
-			System.out.println(msg);
+			return msg;
+
 		} catch (NoSuchElementException e) {
 			try {
 				String msg = tsOverlapMsg.getText();
-				System.out.println(msg);
+				return msg;
+
 			} catch (NoSuchElementException i) {
-				i.printStackTrace();
+				return "";
+
 			}
 		}
 

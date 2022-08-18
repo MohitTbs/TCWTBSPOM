@@ -25,14 +25,20 @@ public class TimesheetTest extends LogInTest {
 	}
 
 	// Adding the Timesheet
-	// @Test(priority = 2, dataProviderClass = DataUtil.class, dataProvider = "dp2")
+	@Test(priority = 2, dataProviderClass = DataUtil.class, dataProvider = "dp2")
 	public void addTimeSheetTest(Hashtable<String, String> data) {
 		logIn();
 		dasp = new DashboardPage(driver);
 		tp = new TimesheetPage(driver);
 		dasp.goToTimesheetPage();
 		tp.tsPageHit();
-		tp.addTimeRecord(data);
+		String msg = tp.addTimeRecord(data);
+		try {
+			Assert.assertEquals(msg, "Information saved successfully.");
+		} catch (Throwable t) {
+			Assert.assertEquals(msg,
+					"This user already has a time record for this date and time. Please edit or delete the time record.");
+		}
 
 	}
 
@@ -44,7 +50,13 @@ public class TimesheetTest extends LogInTest {
 		tp = new TimesheetPage(driver);
 		dasp.goToTimesheetPage();
 		tp.tsPageHit();
-		tp.addTimeOff(data);
+		String msg = tp.addTimeOff(data);
+		try {
+			Assert.assertEquals(msg, "Information saved successfully.");
+		} catch (Throwable t) {
+			Assert.assertEquals(msg,
+					"This user already has a time record for this date and time. Please edit or delete the time record.");
+		}
 
 	}
 
