@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+		<listener class-name="com.tcw.listeners.CustomListener"></listener>
+	</listeners>
+
+	<test name="Test">
+		<classes>
+			<class name="com.tcw.testcases.PendingTimesheetRequestsTest" />
+			<class name="com.tcw.testcases.PossibleClockInErrorsTest" />
+			<class name="com.tcw.testcases.PendingAbsenceRequestsTest" />
+			<class name="com.tcw.testcases.ShiftSwitchRequestsTest" />
+			<class name="com.tcw.testcases.TimesheetsToVerifyTest" />
+			<class name="com.tcw.testcases.ReimbursementRequestsTest" />
+			<class name="com.tcw.testcases.SelfRegistrationRequestsTest" />
+			<class name="com.tcw.testcases.ScheduledEmployeesTest" />
+			<class name="com.tcw.testcases.ClockedInNowTest" />
+			<class name="com.tcw.testcases.EmployeesClockedInTodayTest" />
+			<class name="com.tcw.testcases.NotClockedInNowTest" />
+			<class name="com.tcw.testcases.LiveStreamTest" />
+			<class name="com.tcw.testcases.TimesheetTest" />
+			<class name="com.tcw.testcases.ScheduleTest" />
+			<class name="com.tcw.testcases.EmployeeTest" />
+			<class name="com.tcw.testcases.PayrollTest" />
+			<class name="com.tcw.testcases.TaskTest" />
+			<class name="com.tcw.testcases.SettingsTest" />
+			<class name="com.tcw.testcases.ReportsTest" />
+			<class name="com.tcw.testcases.PaymentTest" />
+			<class name="com.tcw.testcases.SupportTest" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+
+
+
