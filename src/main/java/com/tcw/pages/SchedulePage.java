@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.tcw.base.BasePage;
@@ -66,6 +67,21 @@ public class SchedulePage extends BasePage {
 	@FindBy(xpath = "//h4[@class='modal-title warning']")
 	WebElement errorMsg;
 
+	@FindBy(xpath = "//div[@class='userNamee-month pull-left']")
+	List<WebElement> editEmpList;
+
+	@FindBy(xpath = "//div[@class='block_one_pep ']/div[1]/h5")
+	List<WebElement> editEmpListContent;
+
+	@FindBy(xpath = "//a[contains(@onclick,'confirmDeleteShift')]")
+	WebElement deleteSch;
+
+	@FindBy(id = "aSYesConfirm")
+	WebElement onlyThisInstanceBtn;
+	
+	@FindBy(id = "jSucces")
+	List<WebElement> successMsgList;
+
 	public SchedulePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -77,7 +93,7 @@ public class SchedulePage extends BasePage {
 		toWait();
 		return schdTtl.getText();
 	}
-
+	// Adding the Schedule
 	public String addScheduleForEmp(Hashtable<String, String> data) {
 		Actions act = new Actions(driver);
 		for (WebElement singleDate : multipleDates) {
@@ -112,10 +128,54 @@ public class SchedulePage extends BasePage {
 		Notes.sendKeys(data.get("Notes"));
 		PesonalNote.sendKeys(data.get("PesonalNote"));
 		act.moveToElement(saveBtn).click().build().perform();
+		System.out.println(successMsgList.size());
 		try {
-			return successMsg.getText();
-		} catch (NoSuchElementException e) {
+			//wait.until(ExpectedConditions.visibilityOf(successMsg));
+			return successMsg.getAttribute("innerHTML");
+		} catch (Throwable e) {
 			return errorMsg.getText();
+		}
+		
+	}
+	//Deleting the Schedule
+	public void deleteScheduleForEmp(Hashtable<String, String> data) {
+		Actions act = new Actions(driver);
+		for (WebElement singleDate : multipleDates) {
+			String singleDateTxt = singleDate.getAttribute("data-date");
+			if (singleDateTxt.equalsIgnoreCase(data.get("desiredDate"))) {
+				act.moveToElement(singleDate).click().build().perform();
+				break;
+			}
+
+		}
+		int no = 0;
+		for (WebElement editEmpListSingle : editEmpList) {
+			// System.out.println(editEmpListSingle.getText());
+			// System.out.println(editEmpListSingle.getAttribute("innerHTML"));
+			if (editEmpListSingle.getAttribute("innerHTML").equalsIgnoreCase(data.get("desiredEmp"))) {
+				//System.out.println("Desired Emp"+data.get("desiredEmp"));
+				act.moveToElement(editEmpListContent.get(no)).click().build().perform();
+				try {
+					Thread.sleep(4000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				System.out.println("Inside If");
+				break;
+			}
+			no++;
+		}
+		wait.until(ExpectedConditions.elementToBeClickable(deleteSch));
+		act.moveToElement(deleteSch).click().build().perform();
+		wait.until(ExpectedConditions.visibilityOf(onlyThisInstanceBtn));
+		onlyThisInstanceBtn.click();
+
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 	}
