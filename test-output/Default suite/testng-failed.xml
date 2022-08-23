@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tcw.testcases.TimesheetTest">
+      <class name="com.tcw.testcases.ScheduleTest">
         <methods>
           <include name="tearDown"/>
-          <include name="addTimeSheetTest" invocation-numbers="0"/>
           <include name="settingTheLogs"/>
+          <include name="addScheduleForEmpTest" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.tcw.testcases.TimesheetTest -->
+      </class> <!-- com.tcw.testcases.ScheduleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

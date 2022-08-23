@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
-           tests="1"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="27.209">
+           time="123.223">
   <properties />
   
   
-            <testcase name="addTimeSheetTest" time="27.209" classname="com.tcw.testcases.TimesheetTest" />
+            <testcase name="addAbsenceTest" time="54.064" classname="com.tcw.testcases.TimesheetTest" />
+                <testcase name="addTimeSheetTest" time="69.159" classname="com.tcw.testcases.TimesheetTest" />
       
 </testsuite>

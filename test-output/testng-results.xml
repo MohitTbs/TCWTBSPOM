@@ -2,35 +2,35 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-18T17:54:59 IST" name="Default suite" finished-at="2022-08-18T17:56:03 IST" duration-ms="63647">
+  <suite started-at="2022-08-23T10:57:07 IST" name="Default suite" finished-at="2022-08-23T10:57:53 IST" duration-ms="45330">
     <groups>
     </groups>
-    <test started-at="2022-08-18T17:54:59 IST" name="Default test" finished-at="2022-08-18T17:56:03 IST" duration-ms="63647">
-      <class name="com.tcw.testcases.TimesheetTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.TimesheetTest@39de3d36]" started-at="2022-08-18T17:54:59 IST" name="settingTheLogs" finished-at="2022-08-18T17:54:59 IST" duration-ms="69" status="PASS">
+    <test started-at="2022-08-23T10:57:07 IST" name="Default test" finished-at="2022-08-23T10:57:53 IST" duration-ms="45330">
+      <class name="com.tcw.testcases.ScheduleTest">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.ScheduleTest@39de3d36]" started-at="2022-08-23T10:57:07 IST" name="settingTheLogs" finished-at="2022-08-23T10:57:07 IST" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.TimesheetTest@39de3d36]" started-at="2022-08-18T17:54:59 IST" name="setUp" finished-at="2022-08-18T17:55:06 IST" duration-ms="6704" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.ScheduleTest@39de3d36]" started-at="2022-08-23T10:57:07 IST" name="setUp" finished-at="2022-08-23T10:57:13 IST" duration-ms="5573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addTimeSheetTest(java.util.Hashtable)[pri:2, instance:com.tcw.testcases.TimesheetTest@39de3d36]" started-at="2022-08-18T17:55:06 IST" name="addTimeSheetTest" data-provider="dp2" finished-at="2022-08-18T17:56:02 IST" duration-ms="56296" status="PASS">
+        <test-method signature="addScheduleForEmpTest(java.util.Hashtable)[pri:2, instance:com.tcw.testcases.ScheduleTest@39de3d36]" started-at="2022-08-23T10:57:13 IST" name="addScheduleForEmpTest" data-provider="dp2" finished-at="2022-08-23T10:57:52 IST" duration-ms="39105" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{addTimeNotes=Adding the timesheet through Automation, addTimeJob=Developing, clockInDt=17/08/2022, clockInTime=10:00 AM, clockOutDt=17/08/2022, addTimeLocation=Australia, clockOutTime=07:20 PM, emp=Urvashi N}]]>
+                <![CDATA[{customPay=52.36, desiredDate=2022-08-13, PesonalNote=Your Notes, Notes=My Notes, jobDrpDwn=Home, desiredEmp=Urvashi Jk, endTime=05:30 PM, stTime=03:00 PM, locDrpDwn=India}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addTimeSheetTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.TimesheetTest@39de3d36]" started-at="2022-08-18T17:56:02 IST" name="tearDown" finished-at="2022-08-18T17:56:03 IST" duration-ms="501" status="PASS">
+        </test-method> <!-- addScheduleForEmpTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.ScheduleTest@39de3d36]" started-at="2022-08-23T10:57:52 IST" name="tearDown" finished-at="2022-08-23T10:57:53 IST" duration-ms="509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tcw.testcases.TimesheetTest -->
+      </class> <!-- com.tcw.testcases.ScheduleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
