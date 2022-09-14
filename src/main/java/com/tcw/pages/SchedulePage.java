@@ -1,8 +1,11 @@
 package com.tcw.pages;
 
+import java.time.Duration;
 import java.util.Hashtable;
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tcw.base.BasePage;
 
@@ -22,7 +26,7 @@ public class SchedulePage extends BasePage {
 	@FindBy(xpath = "//div[@id='site_name']//h1")
 	WebElement schdTtl;
 
-	@FindBy(xpath = "//div[@class='fc-bg']//td[@data-date]")
+	@FindBy(xpath = "//td[contains(@class,'fc-day-top') and not(contains(@class,'fc-other-month'))]")
 	List<WebElement> multipleDates;
 
 	@FindBy(xpath = "//a[contains(text(),'Add schedule')]")
@@ -61,7 +65,7 @@ public class SchedulePage extends BasePage {
 	@FindBy(xpath = "//div[@class='col-xs-12']//a[text()='Save']")
 	WebElement saveBtn;
 
-	@FindBy(id = "jSucces")
+	@FindBy(id = "jSuccess")
 	WebElement successMsg;
 
 	@FindBy(xpath = "//h4[@class='modal-title warning']")
@@ -78,8 +82,8 @@ public class SchedulePage extends BasePage {
 
 	@FindBy(id = "aSYesConfirm")
 	WebElement onlyThisInstanceBtn;
-	
-	@FindBy(id = "jSucces")
+
+	@FindBy(id = "jSuccess")
 	List<WebElement> successMsgList;
 
 	public SchedulePage(WebDriver driver) {
@@ -93,13 +97,19 @@ public class SchedulePage extends BasePage {
 		toWait();
 		return schdTtl.getText();
 	}
+
 	// Adding the Schedule
 	public String addScheduleForEmp(Hashtable<String, String> data) {
 		Actions act = new Actions(driver);
 		for (WebElement singleDate : multipleDates) {
 			String singleDateTxt = singleDate.getAttribute("data-date");
+			System.out.println(singleDateTxt);
 			if (singleDateTxt.equalsIgnoreCase(data.get("desiredDate"))) {
-				act.moveToElement(singleDate).click().build().perform();
+				act.moveToElement(singleDate).perform();
+				JavascriptExecutor jse = (JavascriptExecutor) driver;
+				jse.executeScript("window.scrollBy(0,150)");
+				act.moveToElement(singleDate).click(singleDate).build().perform();
+				System.out.println("clicked on the date");
 				break;
 			}
 
@@ -130,14 +140,15 @@ public class SchedulePage extends BasePage {
 		act.moveToElement(saveBtn).click().build().perform();
 		System.out.println(successMsgList.size());
 		try {
-			//wait.until(ExpectedConditions.visibilityOf(successMsg));
-			return successMsg.getAttribute("innerHTML");
+			// wait.until(ExpectedConditions.visibilityOf(successMsg));
+			return successMsg.getAttribute("textContent");
 		} catch (Throwable e) {
 			return errorMsg.getText();
 		}
-		
+
 	}
-	//Deleting the Schedule
+
+	// Deleting the Schedule
 	public void deleteScheduleForEmp(Hashtable<String, String> data) {
 		Actions act = new Actions(driver);
 		for (WebElement singleDate : multipleDates) {
@@ -153,8 +164,19 @@ public class SchedulePage extends BasePage {
 			// System.out.println(editEmpListSingle.getText());
 			// System.out.println(editEmpListSingle.getAttribute("innerHTML"));
 			if (editEmpListSingle.getAttribute("innerHTML").equalsIgnoreCase(data.get("desiredEmp"))) {
-				//System.out.println("Desired Emp"+data.get("desiredEmp"));
-				act.moveToElement(editEmpListContent.get(no)).click().build().perform();
+				// System.out.println("Desired Emp"+data.get("desiredEmp"));
+				WebElement singleContent = editEmpListContent.get(no);
+				wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+				/*
+				 * wait.until(ExpectedConditions. presenceOfElementLocated((By) singleContent));
+				 */
+				// wait.until(ExpectedConditions.presenceOfNestedElementLocatedBy(singleContent,
+				// null));
+				try {
+					act.moveToElement(singleContent).click().build().perform();
+				} catch (Exception e) {
+					act.moveToElement(singleContent).click().build().perform();
+				}
 				try {
 					Thread.sleep(4000);
 				} catch (InterruptedException e) {

@@ -6,8 +6,8 @@
       <class name="com.tcw.testcases.ScheduleTest">
         <methods>
           <include name="tearDown"/>
+          <include name="deleteScheduleForEmpTest" invocation-numbers="0"/>
           <include name="settingTheLogs"/>
-          <include name="addScheduleForEmpTest" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.tcw.testcases.ScheduleTest -->
