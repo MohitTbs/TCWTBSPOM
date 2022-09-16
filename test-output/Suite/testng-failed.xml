@@ -8,22 +8,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tcw.testcases.LiveStreamTest">
+      <class name="com.tcw.testcases.ScheduleTest">
         <methods>
           <include name="tearDown"/>
+          <include name="deleteScheduleForEmpTest" invocation-numbers="0"/>
           <include name="settingTheLogs"/>
           <include name="setUp"/>
-          <include name="liveStreamTest"/>
         </methods>
-      </class> <!-- com.tcw.testcases.LiveStreamTest -->
-      <class name="com.tcw.testcases.TaskTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="settingTheLogs"/>
-          <include name="setUp"/>
-          <include name="addTaskTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.tcw.testcases.TaskTest -->
+      </class> <!-- com.tcw.testcases.ScheduleTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

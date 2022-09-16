@@ -1,3 +1,71 @@
-INFO    2022-09-14 17:40:15,700 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-09-14 17:40:19,244 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-09-14 17:40:23,094 [main] com.tcw.base.BasePage  - In login 2
+INFO    2022-09-16 12:00:09,040 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
+INFO    2022-09-16 12:00:11,880 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
+INFO    2022-09-16 12:00:14,525 [main] com.tcw.base.BasePage  - In login 2
+INFO    2022-09-16 12:00:46,143 [main] com.tcw.base.BasePage  - AllowonMobileDevice
+INFO    2022-09-16 12:00:46,159 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:46,196 [main] com.tcw.base.BasePage  - MobileBrowser
+INFO    2022-09-16 12:00:46,207 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:46,244 [main] com.tcw.base.BasePage  - AllowClockinBasedonScheduletime
+INFO    2022-09-16 12:00:46,255 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:46,293 [main] com.tcw.base.BasePage  - AllowClockOutBasedonScheduletime
+INFO    2022-09-16 12:00:46,304 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:46,345 [main] com.tcw.base.BasePage  - AutomaticallyClockOutAfter24Hours
+INFO    2022-09-16 12:00:46,360 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:46,399 [main] com.tcw.base.BasePage  - GeoTracking
+INFO    2022-09-16 12:00:46,409 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:46,445 [main] com.tcw.base.BasePage  - AllowImageTracker
+INFO    2022-09-16 12:00:46,455 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:46,494 [main] com.tcw.base.BasePage  - AllowBlurImage
+INFO    2022-09-16 12:00:46,504 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:46,541 [main] com.tcw.base.BasePage  - DoNotAllowClockinBeforeSchedule
+INFO    2022-09-16 12:00:46,552 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:46,589 [main] com.tcw.base.BasePage  - DoNotAllowClockOutAfterSchedule
+INFO    2022-09-16 12:00:46,599 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:47,563 [main] com.tcw.base.BasePage  - ReceiveNotification
+INFO    2022-09-16 12:00:47,574 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:47,627 [main] com.tcw.base.BasePage  - Clockin
+INFO    2022-09-16 12:00:47,637 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:47,675 [main] com.tcw.base.BasePage  - ClockOut
+INFO    2022-09-16 12:00:47,687 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:47,738 [main] com.tcw.base.BasePage  - OnPrimaryEmail
+INFO    2022-09-16 12:00:47,748 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:47,790 [main] com.tcw.base.BasePage  - OnSecondaryEmail
+INFO    2022-09-16 12:00:47,801 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:48,716 [main] com.tcw.base.BasePage  - ApplyForNewUser
+INFO    2022-09-16 12:00:48,738 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:48,817 [main] com.tcw.base.BasePage  - ClockPointRestriction
+INFO    2022-09-16 12:00:48,833 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:48,878 [main] com.tcw.base.BasePage  - ClockPointRestriction
+INFO    2022-09-16 12:00:48,889 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:49,814 [main] com.tcw.base.BasePage  - IncludeWagesInGlobal
+INFO    2022-09-16 12:00:49,841 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:49,920 [main] com.tcw.base.BasePage  - PayEmployeesForBreaks
+INFO    2022-09-16 12:00:49,931 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:49,972 [main] com.tcw.base.BasePage  - PayEmployeesForBreaks
+INFO    2022-09-16 12:00:49,983 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:50,034 [main] com.tcw.base.BasePage  - TimeRounding
+INFO    2022-09-16 12:00:50,044 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:50,081 [main] com.tcw.base.BasePage  - TimeRounding
+INFO    2022-09-16 12:00:50,091 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:50,127 [main] com.tcw.base.BasePage  - TimeRounding
+INFO    2022-09-16 12:00:50,136 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:50,185 [main] com.tcw.base.BasePage  - AllowOverTime
+INFO    2022-09-16 12:00:50,195 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:50,230 [main] com.tcw.base.BasePage  - AllowOverTime
+INFO    2022-09-16 12:00:50,240 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:51,172 [main] com.tcw.base.BasePage  - UploadReceipt
+INFO    2022-09-16 12:00:51,192 [main] com.tcw.base.BasePage  - false
+INFO    2022-09-16 12:00:52,115 [main] com.tcw.base.BasePage  - Fiscal Year
+INFO    2022-09-16 12:00:52,131 [main] com.tcw.base.BasePage  - Fiscal Year With Accruing Time
+INFO    2022-09-16 12:00:52,146 [main] com.tcw.base.BasePage  - Anniversary Date With Accruing Time
+INFO    2022-09-16 12:00:52,161 [main] com.tcw.base.BasePage  - Hire Date
+INFO    2022-09-16 12:00:52,175 [main] com.tcw.base.BasePage  - Hire Date With Accruing Time
+INFO    2022-09-16 12:00:52,191 [main] com.tcw.base.BasePage  - Anniversary Dt
+INFO    2022-09-16 12:00:52,208 [main] com.tcw.base.BasePage  - new pto
+INFO    2022-09-16 12:00:52,225 [main] com.tcw.base.BasePage  - dfffffffff
+INFO    2022-09-16 12:00:52,242 [main] com.tcw.base.BasePage  - testing
+INFO    2022-09-16 12:00:52,259 [main] com.tcw.base.BasePage  - Events and Occasions
+INFO    2022-09-16 12:00:53,133 [main] com.tcw.base.BasePage  - AutomatedWeeklyScheduleEmail
+INFO    2022-09-16 12:00:53,154 [main] com.tcw.base.BasePage  - true
+INFO    2022-09-16 12:00:53,218 [main] com.tcw.base.BasePage  - AutomatedMonthlyScheduleEmail
+INFO    2022-09-16 12:00:53,241 [main] com.tcw.base.BasePage  - true

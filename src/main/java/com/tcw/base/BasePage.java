@@ -36,7 +36,7 @@ public class BasePage {
 	//Methods 
 	
 	public static void toWait() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("divLoading")));
 		System.out.println("1");

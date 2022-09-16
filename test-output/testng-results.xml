@@ -2,35 +2,28 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-14T17:40:15 IST" name="Default suite" finished-at="2022-09-14T17:40:56 IST" duration-ms="40814">
+  <suite started-at="2022-09-16T12:00:09 IST" name="Default suite" finished-at="2022-09-16T12:00:53 IST" duration-ms="44724">
     <groups>
     </groups>
-    <test started-at="2022-09-14T17:40:15 IST" name="Default test" finished-at="2022-09-14T17:40:56 IST" duration-ms="40814">
-      <class name="com.tcw.testcases.ScheduleTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.ScheduleTest@77128536]" started-at="2022-09-14T17:40:15 IST" name="settingTheLogs" finished-at="2022-09-14T17:40:15 IST" duration-ms="101" status="PASS">
+    <test started-at="2022-09-16T12:00:09 IST" name="Default test" finished-at="2022-09-16T12:00:53 IST" duration-ms="44724">
+      <class name="com.tcw.testcases.EmployeeTest">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.EmployeeTest@6ce86ce1]" started-at="2022-09-16T12:00:08 IST" name="settingTheLogs" finished-at="2022-09-16T12:00:09 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.ScheduleTest@77128536]" started-at="2022-09-14T17:40:15 IST" name="setUp" finished-at="2022-09-14T17:40:23 IST" duration-ms="7382" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.EmployeeTest@6ce86ce1]" started-at="2022-09-16T12:00:09 IST" name="setUp" finished-at="2022-09-16T12:00:14 IST" duration-ms="5457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteScheduleForEmpTest(java.util.Hashtable)[pri:3, instance:com.tcw.testcases.ScheduleTest@77128536]" started-at="2022-09-14T17:40:23 IST" name="deleteScheduleForEmpTest" data-provider="dp2" finished-at="2022-09-14T17:40:55 IST" duration-ms="32748" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{customPay=52.36, desiredDate=2022-09-09, PesonalNote=Your Notes, Notes=My Notes, jobDrpDwn=Home, desiredEmp=Hackshaw, endTime=05:30 PM, stTime=03:00 PM, locDrpDwn=India}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="globalSettingTest()[pri:2, instance:com.tcw.testcases.EmployeeTest@6ce86ce1]" started-at="2022-09-16T12:00:14 IST" name="globalSettingTest" finished-at="2022-09-16T12:00:53 IST" duration-ms="38780" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteScheduleForEmpTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.ScheduleTest@77128536]" started-at="2022-09-14T17:40:55 IST" name="tearDown" finished-at="2022-09-14T17:40:56 IST" duration-ms="496" status="PASS">
+        </test-method> <!-- globalSettingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.EmployeeTest@6ce86ce1]" started-at="2022-09-16T12:00:53 IST" name="tearDown" finished-at="2022-09-16T12:00:53 IST" duration-ms="446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tcw.testcases.ScheduleTest -->
+      </class> <!-- com.tcw.testcases.EmployeeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
