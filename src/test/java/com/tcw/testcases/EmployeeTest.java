@@ -25,4 +25,12 @@ public class EmployeeTest extends LogInTest {
 		ep.goToEmployeePage();
 		ep.globalSettingTesting();
 	}
+	
+	@Test(priority=3)
+	public void reimbursementTest() {
+		logIn();
+		ep = new EmployeePage(driver);
+		ep.goToEmployeePage();
+		ep.reimbursementTesting();
+	}
 }

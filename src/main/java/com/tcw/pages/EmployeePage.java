@@ -1,6 +1,6 @@
 package com.tcw.pages;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -81,6 +81,9 @@ public class EmployeePage extends BasePage {
 	
 	@FindBy(id="checkboxMonthly")
 	WebElement monthlyCheckBx;
+	
+	@FindBy(xpath="//a[text()='Reimbursement' and @id='1']")
+	WebElement reimbursementGTab;
 	
 	
 	public EmployeePage(WebDriver driver) {
@@ -171,6 +174,19 @@ public class EmployeePage extends BasePage {
 			log.info(name);
 			System.out.println(name);
 		}
+	}
+	
+	
+	// Reimbursement Test
+	public void reimbursementTesting() {
+		Actions act = new Actions(driver);
+		act.moveToElement(globalSettingBtn).click().build().perform();
+		act.moveToElement(reimbursementGTab).click().build().perform();
+		
+		
+		
+		
+		
 	}
 	
 	
