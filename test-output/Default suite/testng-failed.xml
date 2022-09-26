@@ -8,7 +8,7 @@
           <include name="tearDown"/>
           <include name="settingTheLogs"/>
           <include name="setUp"/>
-          <include name="globalSettingTest"/>
+          <include name="reimbursementTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tcw.testcases.EmployeeTest -->
     </classes>

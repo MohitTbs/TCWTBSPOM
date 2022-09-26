@@ -1,9 +1,12 @@
 package com.tcw.testcases;
 
+import java.util.Hashtable;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tcw.pages.EmployeePage;
+import com.tcw.utilities.DataUtil;
 
 public class EmployeeTest extends LogInTest {
 
@@ -26,11 +29,12 @@ public class EmployeeTest extends LogInTest {
 		ep.globalSettingTesting();
 	}
 	
-	@Test(priority=3)
-	public void reimbursementTest() {
+	@Test(priority=3, dataProviderClass = DataUtil.class, dataProvider = "dp2" , enabled=true)
+	public void reimbursementTest(Hashtable<String,String> data) {
 		logIn();
 		ep = new EmployeePage(driver);
 		ep.goToEmployeePage();
-		ep.reimbursementTesting();
+		String txt=ep.reimbursementTesting(data);
+		Assert.assertTrue(txt.contains("Total"));
 	}
 }
