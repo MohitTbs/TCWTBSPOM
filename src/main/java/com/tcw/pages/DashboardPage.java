@@ -1,10 +1,16 @@
 package com.tcw.pages;
 
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tcw.base.BasePage;
 
@@ -57,6 +63,15 @@ public class DashboardPage extends BasePage {
 	
 	@FindBy(xpath = "//span[@class='sidebar_menu_link' and text()='Timesheet']")
 	public WebElement timesheetPageLink;
+	
+	@FindBy(xpath="//a[@id='clock_in_link']")
+	public WebElement clockIn;
+	
+	@FindBy(xpath="//a[@id='clock_out_link' and contains(text(),'Clock Out')]")
+	public WebElement clockOut;
+	
+	@FindBy(xpath="//div[@class='all-button-header-sec']")
+	public WebElement completeClockInOut;
 
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -160,6 +175,32 @@ public class DashboardPage extends BasePage {
 		timesheetPageLink.click();
 
 		return new TimesheetPage(driver);
+	}
+	
+	public void clockingInAndOut() {
+		Actions act = new Actions(driver);
+		act.moveToElement(completeClockInOut).build().perform();
+		String txt=completeClockInOut.getText();
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+		System.out.println(txt);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		
+		
+		
+		if(txt.contains("Clock In")) {
+			act.moveToElement(clockIn).click().build().perform();
+		}else if(txt.contains("Clock Out")) {
+			//act.moveToElement(clockOut).click().build().perform();
+			js.executeScript("arguments[0].click()", clockOut);
+		}
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

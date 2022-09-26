@@ -1,36 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-26T16:08:52 IST" name="Default suite" finished-at="2022-09-26T16:09:37 IST" duration-ms="44705">
+  <suite started-at="2022-09-26T18:20:43 IST" name="Default suite" finished-at="2022-09-26T18:21:09 IST" duration-ms="26071">
     <groups>
     </groups>
-    <test started-at="2022-09-26T16:08:52 IST" name="Default test" finished-at="2022-09-26T16:09:37 IST" duration-ms="44705">
-      <class name="com.tcw.testcases.EmployeeTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.EmployeeTest@58326051]" started-at="2022-09-26T16:08:52 IST" name="settingTheLogs" finished-at="2022-09-26T16:08:52 IST" duration-ms="49" status="PASS">
+    <test started-at="2022-09-26T18:20:43 IST" name="Default test" finished-at="2022-09-26T18:21:09 IST" duration-ms="26071">
+      <class name="com.tcw.testcases.DashboardTest">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-26T18:20:43 IST" name="settingTheLogs" finished-at="2022-09-26T18:20:43 IST" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.EmployeeTest@58326051]" started-at="2022-09-26T16:08:52 IST" name="setUp" finished-at="2022-09-26T16:08:58 IST" duration-ms="5758" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-26T18:20:43 IST" name="setUp" finished-at="2022-09-26T18:20:50 IST" duration-ms="7114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="reimbursementTest(java.util.Hashtable)[pri:3, instance:com.tcw.testcases.EmployeeTest@58326051]" started-at="2022-09-26T16:08:58 IST" name="reimbursementTest" data-provider="dp2" finished-at="2022-09-26T16:09:36 IST" duration-ms="38441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{remEndDate=28/06/2022, remStDate=13/05/2021, remEmpSS=Maulik Dhaduk}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="clockInClockOut()[pri:3, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-26T18:20:50 IST" name="clockInClockOut" finished-at="2022-09-26T18:21:08 IST" duration-ms="18557" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reimbursementTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.EmployeeTest@58326051]" started-at="2022-09-26T16:09:36 IST" name="tearDown" finished-at="2022-09-26T16:09:37 IST" duration-ms="342" status="PASS">
+        </test-method> <!-- clockInClockOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-26T18:21:08 IST" name="tearDown" finished-at="2022-09-26T18:21:09 IST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tcw.testcases.EmployeeTest -->
+      </class> <!-- com.tcw.testcases.DashboardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

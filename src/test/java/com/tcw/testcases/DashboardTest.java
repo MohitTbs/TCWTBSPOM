@@ -13,7 +13,7 @@ public class DashboardTest extends LogInTest {
 
 	//@Test(priority = 1)
 	
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void goToPendingTimesheetReqTest() {
 		logIn();
 		//System.out.println("hello error 1");
@@ -25,6 +25,13 @@ public class DashboardTest extends LogInTest {
 		//System.out.println(driver);
 		String tsReqSrchTtl1=ptr.tsReqSrchTtl.getText();
 		Assert.assertEquals(tsReqSrchTtl1, "TIMESHEETS REQUEST SEARCH");
+	}
+	
+	@Test(priority=3)
+	public void clockInClockOut() {
+		logIn();
+		dashp = new DashboardPage(driver);
+		dashp.clockingInAndOut();
 	}
 
 }
