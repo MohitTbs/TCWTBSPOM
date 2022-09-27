@@ -31,7 +31,9 @@ public class DashboardTest extends LogInTest {
 	public void clockInClockOut() {
 		logIn();
 		dashp = new DashboardPage(driver);
-		dashp.clockingInAndOut();
+		String txt =dashp.clockingInAndOut();
+		Assert.assertTrue(txt.contains("Clock"));
+		
 	}
 
 }

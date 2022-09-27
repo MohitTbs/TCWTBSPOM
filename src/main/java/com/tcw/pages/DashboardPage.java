@@ -36,42 +36,45 @@ public class DashboardPage extends BasePage {
 
 	@FindBy(xpath = "//div[contains(text(),'Timesheets To Verify')]")
 	public WebElement tsToVerifyLink;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'Reimbursement Requests')]")
 	public WebElement reimbReqLink;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'Self Registration Requests')]")
 	public WebElement selfRegReqLink;
-	
+
 	@FindBy(xpath = "//div[text()='Scheduled Employees']")
 	public WebElement schEmpLink;
-	
+
 	@FindBy(xpath = "//div[text()='Clocked In Now']")
 	public WebElement clockedInNowLink;
-	
+
 	@FindBy(xpath = "//div[text()='Employees Clocked In Today']")
 	public WebElement empClockTodayLink;
-	
+
 	@FindBy(xpath = "//div[text()='Not Clocked In Now']")
 	public WebElement notClockedLink;
-	
+
 	@FindBy(id = "livestream_link")
 	public WebElement liveStreamLink;
-	
+
 	@FindBy(xpath = "//a[@class='livestream_link']")
 	public WebElement liveStreamMore;
-	
+
 	@FindBy(xpath = "//span[@class='sidebar_menu_link' and text()='Timesheet']")
 	public WebElement timesheetPageLink;
-	
-	@FindBy(xpath="//a[@id='clock_in_link']")
+
+	@FindBy(xpath = "//a[@id='clock_in_link']")
 	public WebElement clockIn;
-	
-	@FindBy(xpath="//a[@id='clock_out_link' and contains(text(),'Clock Out')]")
+
+	@FindBy(xpath = "//a[@id='clock_out_link' and contains(text(),'Clock Out')]")
 	public WebElement clockOut;
-	
-	@FindBy(xpath="//div[@class='all-button-header-sec']")
+
+	@FindBy(xpath = "//div[@class='all-button-header-sec']")
 	public WebElement completeClockInOut;
+
+	@FindBy(xpath = "//div[@id='jSuccess']")
+	WebElement clockInOutMsg;
 
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
@@ -117,7 +120,7 @@ public class DashboardPage extends BasePage {
 
 		return new TimesheetsToVerifyPage(driver);
 	}
-	
+
 	public ReimbursementRequestsPage goToReimbursementRequestsPage() {
 
 		reimbReqLink.click();
@@ -131,35 +134,35 @@ public class DashboardPage extends BasePage {
 
 		return new SelfRegistrationRequestsPage(driver);
 	}
-	
+
 	public ScheduledEmployeesPage goToScheduledEmployeesPage() {
 
 		schEmpLink.click();
 
 		return new ScheduledEmployeesPage(driver);
 	}
-	
+
 	public ClockedInNowPage goToClockedInNowPage() {
 
 		clockedInNowLink.click();
 
 		return new ClockedInNowPage(driver);
 	}
-	
+
 	public EmployeesClockedInTodayPage goToEmployeesClockedInTodayPage() {
 
 		empClockTodayLink.click();
 
 		return new EmployeesClockedInTodayPage(driver);
 	}
-	
+
 	public NotClockedInNowPage goToNotClockedInNowPage() {
 
 		notClockedLink.click();
 
 		return new NotClockedInNowPage(driver);
 	}
-	
+
 	public LiveStreamPage goToLiveStreamPage() {
 
 		liveStreamLink.click();
@@ -169,38 +172,31 @@ public class DashboardPage extends BasePage {
 
 		return new LiveStreamPage(driver);
 	}
-	
+
 	public TimesheetPage goToTimesheetPage() {
 
 		timesheetPageLink.click();
 
 		return new TimesheetPage(driver);
 	}
-	
-	public void clockingInAndOut() {
+
+	public String clockingInAndOut() {
 		Actions act = new Actions(driver);
 		act.moveToElement(completeClockInOut).build().perform();
-		String txt=completeClockInOut.getText();
-		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+		String txt = completeClockInOut.getText();
+		// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 		System.out.println(txt);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		
-		
-		
-		
-		if(txt.contains("Clock In")) {
+
+		if (txt.contains("Clock In")) {
 			act.moveToElement(clockIn).click().build().perform();
-		}else if(txt.contains("Clock Out")) {
-			//act.moveToElement(clockOut).click().build().perform();
+		} else if (txt.contains("Clock Out")) {
+			// act.moveToElement(clockOut).click().build().perform();
 			js.executeScript("arguments[0].click()", clockOut);
 		}
-		
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
+		return clockInOutMsg.getText();
+
 	}
 
 }

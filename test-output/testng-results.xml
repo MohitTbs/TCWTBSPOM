@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-26T18:20:43 IST" name="Default suite" finished-at="2022-09-26T18:21:09 IST" duration-ms="26071">
+  <suite started-at="2022-09-27T17:36:03 IST" name="Default suite" finished-at="2022-09-27T17:36:26 IST" duration-ms="23187">
     <groups>
     </groups>
-    <test started-at="2022-09-26T18:20:43 IST" name="Default test" finished-at="2022-09-26T18:21:09 IST" duration-ms="26071">
+    <test started-at="2022-09-27T17:36:03 IST" name="Default test" finished-at="2022-09-27T17:36:26 IST" duration-ms="23187">
       <class name="com.tcw.testcases.DashboardTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-26T18:20:43 IST" name="settingTheLogs" finished-at="2022-09-26T18:20:43 IST" duration-ms="54" status="PASS">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-27T17:36:03 IST" name="settingTheLogs" finished-at="2022-09-27T17:36:03 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-26T18:20:43 IST" name="setUp" finished-at="2022-09-26T18:20:50 IST" duration-ms="7114" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-27T17:36:03 IST" name="setUp" finished-at="2022-09-27T17:36:10 IST" duration-ms="6875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clockInClockOut()[pri:3, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-26T18:20:50 IST" name="clockInClockOut" finished-at="2022-09-26T18:21:08 IST" duration-ms="18557" status="PASS">
+        <test-method signature="clockInClockOut()[pri:3, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-27T17:36:10 IST" name="clockInClockOut" finished-at="2022-09-27T17:36:26 IST" duration-ms="15813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clockInClockOut -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-26T18:21:08 IST" name="tearDown" finished-at="2022-09-26T18:21:09 IST" duration-ms="360" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.DashboardTest@54e7df6a]" started-at="2022-09-27T17:36:26 IST" name="tearDown" finished-at="2022-09-27T17:36:26 IST" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
