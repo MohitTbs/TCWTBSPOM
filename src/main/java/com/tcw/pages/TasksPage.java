@@ -60,7 +60,7 @@ public class TasksPage extends BasePage {
 		return taskPageTtl.getText();
 
 	}
-
+	//Adding the Task
 	public String addActualTask(Hashtable<String,String> data) {
 		toWait();
 		act = new Actions(driver);

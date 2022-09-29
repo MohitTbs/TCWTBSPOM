@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.313">
+           time="20.281">
   <properties />
   
   
-            <testcase name="verifiedClockInTest" time="21.313" classname="com.tcw.testcases.TimesheetsToVerifyTest" />
+            <testcase name="verifiedClockInTest" time="20.281" classname="com.tcw.testcases.TimesheetsToVerifyTest" />
       
 </testsuite>

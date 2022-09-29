@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="20.806">
+           time="21.421">
   <properties />
   
   
-            <testcase name="clockedInNowTest" time="20.806" classname="com.tcw.testcases.ClockedInNowTest" />
+            <testcase name="clockedInNowTest" time="21.421" classname="com.tcw.testcases.ClockedInNowTest" />
       
 </testsuite>

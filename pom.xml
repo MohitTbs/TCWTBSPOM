@@ -140,7 +140,7 @@
 				<configuration>
 					<testFailureIgnore> false </testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/runner/Allfile.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 

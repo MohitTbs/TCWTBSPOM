@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="38.214">
+           time="22.834">
   <properties />
   
   
-            <testcase name="landingOnPaymentPage" time="38.214" classname="com.tcw.testcases.PaymentTest" />
+            <testcase name="landingOnPaymentPage" time="22.834" classname="com.tcw.testcases.PaymentTest" />
       
 </testsuite>

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.150">
+           time="18.768">
   <properties />
   
   
-            <testcase name="timesheetRequestListTest" time="21.150" classname="com.tcw.testcases.PendingTimesheetRequestsTest" />
+            <testcase name="timesheetRequestListTest" time="18.768" classname="com.tcw.testcases.PendingTimesheetRequestsTest" />
       
 </testsuite>

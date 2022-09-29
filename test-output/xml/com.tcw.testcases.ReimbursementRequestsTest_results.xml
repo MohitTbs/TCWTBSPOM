@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="25.695">
+           time="27.995">
   <properties />
   
   
-            <testcase name="reimReqSrcTest" time="25.695" classname="com.tcw.testcases.ReimbursementRequestsTest" />
+            <testcase name="reimReqSrcTest" time="27.995" classname="com.tcw.testcases.ReimbursementRequestsTest" />
       
 </testsuite>

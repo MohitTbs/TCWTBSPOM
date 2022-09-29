@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="23.425">
+           time="25.063">
   <properties />
   
   
-            <testcase name="daySchTest" time="23.425" classname="com.tcw.testcases.ScheduledEmployeesTest" />
+            <testcase name="daySchTest" time="25.063" classname="com.tcw.testcases.ScheduledEmployeesTest" />
       
 </testsuite>

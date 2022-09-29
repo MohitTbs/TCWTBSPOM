@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
-           tests="1"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="26.216">
+           time="46.704">
   <properties />
   
   
-            <testcase name="landingOnPayrollPage" time="26.216" classname="com.tcw.testcases.PayrollTest" />
+            <testcase name="landingOnPayrollPage" time="24.245" classname="com.tcw.testcases.PayrollTest" />
+                <testcase name="GeneratingThePayroll" time="22.459" classname="com.tcw.testcases.PayrollTest" />
       
 </testsuite>

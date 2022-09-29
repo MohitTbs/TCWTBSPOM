@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="123.223">
+           time="112.454">
   <properties />
   
   
-            <testcase name="addAbsenceTest" time="54.064" classname="com.tcw.testcases.TimesheetTest" />
-                <testcase name="addTimeSheetTest" time="69.159" classname="com.tcw.testcases.TimesheetTest" />
+            <testcase name="addTimeSheetTest" time="54.530" classname="com.tcw.testcases.TimesheetTest" />
+                <testcase name="addAbsenceTest" time="57.924" classname="com.tcw.testcases.TimesheetTest" />
       
 </testsuite>

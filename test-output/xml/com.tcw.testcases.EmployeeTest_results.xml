@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
-           tests="2"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="67.122">
+           time="98.189">
   <properties />
   
   
-            <testcase name="landingOnEmployeePage" time="29.715" classname="com.tcw.testcases.EmployeeTest" />
-                <testcase name="globalSettingTest" time="37.407" classname="com.tcw.testcases.EmployeeTest" />
+            <testcase name="landingOnEmployeePage" time="27.260" classname="com.tcw.testcases.EmployeeTest" />
+                <testcase name="globalSettingTest" time="38.968" classname="com.tcw.testcases.EmployeeTest" />
+                <testcase name="reimbursementTest" time="31.961" classname="com.tcw.testcases.EmployeeTest" />
       
 </testsuite>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 26 15:40:53 IST 2022</td>
+<td>Started on:</td><td>Thu Sep 29 13:09:52 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>77 seconds (77290 ms)</td>
+<tr><td>Total time:</td><td>814 seconds (814956 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,81 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tcw.testcases.LiveStreamTest.liveStreamTest()'><b>liveStreamTest</b><br>Test class: com.tcw.testcases.LiveStreamTest<br/>
+<a href="#Output-530942536" onClick='toggleBox("Output-530942536", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-530942536" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-530942536">
+Capturing Screenshot<br/>
+<a target="_blank" href=Thu_Sep_29_13_15_15_IST_2022.jpg>Screenshot</a><br/>
+<br><br/>
+<a target="_blank" href=Thu_Sep_29_13_15_15_IST_2022.jpg><img src=Thu_Sep_29_13_15_15_IST_2022.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: divLoading (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afd3c4b04e44d2d033e17c2d9d582299
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.tcw.base.BasePage.toWait(BasePage.java:43)
+	at com.tcw.pages.LiveStreamPage.liveStream(LiveStreamPage.java:22)
+	at com.tcw.testcases.LiveStreamTest.liveStreamTest(LiveStreamTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530942536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace530942536'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: divLoading (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afd3c4b04e44d2d033e17c2d9d582299
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.tcw.base.BasePage.toWait(BasePage.java:43)
+	at com.tcw.pages.LiveStreamPage.liveStream(LiveStreamPage.java:22)
+	at com.tcw.testcases.LiveStreamTest.liveStreamTest(LiveStreamTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>33</td>
+<td>com.tcw.testcases.LiveStreamTest@65b3a85a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,15 +150,130 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.tcw.testcases.ClockedInNowTest.clockedInNowTest()'><b>clockedInNowTest</b><br>Test class: com.tcw.testcases.ClockedInNowTest</td>
+<td></td>
+<td>21</td>
+<td>com.tcw.testcases.ClockedInNowTest@1698fc68</td></tr>
+<tr>
 <td title='com.tcw.testcases.EmployeeTest.landingOnEmployeePage()'><b>landingOnEmployeePage</b><br>Test class: com.tcw.testcases.EmployeeTest</td>
 <td></td>
-<td>29</td>
-<td>com.tcw.testcases.EmployeeTest@3e7634b9</td></tr>
+<td>27</td>
+<td>com.tcw.testcases.EmployeeTest@2b5825fa</td></tr>
+<tr>
+<td title='com.tcw.testcases.ScheduleTest.addScheduleForEmpTest()'><b>addScheduleForEmpTest</b><br>Test class: com.tcw.testcases.ScheduleTest<br>Parameters: {customPay=52.36, desiredDate=2022-09-09, PesonalNote=Your Notes, Notes=My Notes, jobDrpDwn=Home, desiredEmp=Hackshaw, endTime=05:30 PM, stTime=03:00 PM, locDrpDwn=India}</td>
+<td></td>
+<td>28</td>
+<td>com.tcw.testcases.ScheduleTest@57eda880</td></tr>
+<tr>
+<td title='com.tcw.testcases.ShiftSwitchRequestsTest.switchScheduleReqTest()'><b>switchScheduleReqTest</b><br>Test class: com.tcw.testcases.ShiftSwitchRequestsTest</td>
+<td></td>
+<td>22</td>
+<td>com.tcw.testcases.ShiftSwitchRequestsTest@26425897</td></tr>
+<tr>
+<td title='com.tcw.testcases.ReimbursementRequestsTest.reimReqSrcTest()'><b>reimReqSrcTest</b><br>Test class: com.tcw.testcases.ReimbursementRequestsTest</td>
+<td></td>
+<td>27</td>
+<td>com.tcw.testcases.ReimbursementRequestsTest@58c34bb3</td></tr>
+<tr>
+<td title='com.tcw.testcases.PossibleClockInErrorsTest.possClockInErrListTest()'><b>possClockInErrListTest</b><br>Test class: com.tcw.testcases.PossibleClockInErrorsTest</td>
+<td></td>
+<td>22</td>
+<td>com.tcw.testcases.PossibleClockInErrorsTest@5c8eee0f</td></tr>
 <tr>
 <td title='com.tcw.testcases.EmployeeTest.globalSettingTest()'><b>globalSettingTest</b><br>Test class: com.tcw.testcases.EmployeeTest</td>
 <td></td>
-<td>37</td>
-<td>com.tcw.testcases.EmployeeTest@3e7634b9</td></tr>
+<td>38</td>
+<td>com.tcw.testcases.EmployeeTest@2b5825fa</td></tr>
+<tr>
+<td title='com.tcw.testcases.SelfRegistrationRequestsTest.selfRegUserTest()'><b>selfRegUserTest</b><br>Test class: com.tcw.testcases.SelfRegistrationRequestsTest</td>
+<td></td>
+<td>20</td>
+<td>com.tcw.testcases.SelfRegistrationRequestsTest@56a4479a</td></tr>
+<tr>
+<td title='com.tcw.testcases.EmployeeTest.reimbursementTest()'><b>reimbursementTest</b><br>Test class: com.tcw.testcases.EmployeeTest<br>Parameters: {remEndDate=28/06/2022, remStDate=13/05/2021, remEmpSS=Maulik Dhaduk}</td>
+<td></td>
+<td>31</td>
+<td>com.tcw.testcases.EmployeeTest@2b5825fa</td></tr>
+<tr>
+<td title='com.tcw.testcases.SupportTest.landingOnSupportPage()'><b>landingOnSupportPage</b><br>Test class: com.tcw.testcases.SupportTest</td>
+<td></td>
+<td>20</td>
+<td>com.tcw.testcases.SupportTest@7e928e2f</td></tr>
+<tr>
+<td title='com.tcw.testcases.ScheduledEmployeesTest.daySchTest()'><b>daySchTest</b><br>Test class: com.tcw.testcases.ScheduledEmployeesTest</td>
+<td></td>
+<td>25</td>
+<td>com.tcw.testcases.ScheduledEmployeesTest@62f4ff3b</td></tr>
+<tr>
+<td title='com.tcw.testcases.PendingTimesheetRequestsTest.timesheetRequestListTest()'><b>timesheetRequestListTest</b><br>Test class: com.tcw.testcases.PendingTimesheetRequestsTest</td>
+<td></td>
+<td>18</td>
+<td>com.tcw.testcases.PendingTimesheetRequestsTest@75390459</td></tr>
+<tr>
+<td title='com.tcw.testcases.PayrollTest.landingOnPayrollPage()'><b>landingOnPayrollPage</b><br>Test class: com.tcw.testcases.PayrollTest</td>
+<td></td>
+<td>24</td>
+<td>com.tcw.testcases.PayrollTest@53d1b9b3</td></tr>
+<tr>
+<td title='com.tcw.testcases.EmployeesClockedInTodayTest.timesheetSrchTest()'><b>timesheetSrchTest</b><br>Test class: com.tcw.testcases.EmployeesClockedInTodayTest</td>
+<td></td>
+<td>20</td>
+<td>com.tcw.testcases.EmployeesClockedInTodayTest@4504d271</td></tr>
+<tr>
+<td title='com.tcw.testcases.PendingAbsenceRequestsTest.timesheetRequestListTest()'><b>timesheetRequestListTest</b><br>Test class: com.tcw.testcases.PendingAbsenceRequestsTest</td>
+<td></td>
+<td>20</td>
+<td>com.tcw.testcases.PendingAbsenceRequestsTest@565b064f</td></tr>
+<tr>
+<td title='com.tcw.testcases.TimesheetTest.addTimeSheetTest()'><b>addTimeSheetTest</b><br>Test class: com.tcw.testcases.TimesheetTest<br>Parameters: {addTimeNotes=Adding the timesheet through Automation, addTimeJob=Developing, clockInDt=17/08/2022, clockInTime=10:00 AM, clockOutDt=17/08/2022, addTimeLocation=Australia, clockOutTime=07:20 PM, emp=Urvashi N}</td>
+<td></td>
+<td>54</td>
+<td>com.tcw.testcases.TimesheetTest@34997338</td></tr>
+<tr>
+<td title='com.tcw.testcases.ScheduleTest.deleteScheduleForEmpTest()'><b>deleteScheduleForEmpTest</b><br>Test class: com.tcw.testcases.ScheduleTest<br>Parameters: {customPay=52.36, desiredDate=2022-09-09, PesonalNote=Your Notes, Notes=My Notes, jobDrpDwn=Home, desiredEmp=Hackshaw, endTime=05:30 PM, stTime=03:00 PM, locDrpDwn=India}</td>
+<td></td>
+<td>30</td>
+<td>com.tcw.testcases.ScheduleTest@57eda880</td></tr>
+<tr>
+<td title='com.tcw.testcases.TimesheetsToVerifyTest.verifiedClockInTest()'><b>verifiedClockInTest</b><br>Test class: com.tcw.testcases.TimesheetsToVerifyTest</td>
+<td></td>
+<td>20</td>
+<td>com.tcw.testcases.TimesheetsToVerifyTest@73163d48</td></tr>
+<tr>
+<td title='com.tcw.testcases.TaskTest.addTaskTest()'><b>addTaskTest</b><br>Test class: com.tcw.testcases.TaskTest<br>Parameters: {task=Null Tasks, description=Automation skills, emp=Jay Z}</td>
+<td></td>
+<td>23</td>
+<td>com.tcw.testcases.TaskTest@2cae1042</td></tr>
+<tr>
+<td title='com.tcw.testcases.PayrollTest.GeneratingThePayroll()'><b>GeneratingThePayroll</b><br>Test class: com.tcw.testcases.PayrollTest</td>
+<td></td>
+<td>22</td>
+<td>com.tcw.testcases.PayrollTest@53d1b9b3</td></tr>
+<tr>
+<td title='com.tcw.testcases.TimesheetTest.addAbsenceTest()'><b>addAbsenceTest</b><br>Test class: com.tcw.testcases.TimesheetTest<br>Parameters: {emp=Twentyone 21, absenceNotes=Adding the absence through automated test case, absenceEndDt=20/08/2022, absenceJob=Design, absenceStDt=20/08/2022, absenceStTime=10:00 AM, absenceEndTime=05:30 PM, absenceType=Fiscal Year, absenceLocation=Cramer Dentistry}</td>
+<td></td>
+<td>57</td>
+<td>com.tcw.testcases.TimesheetTest@34997338</td></tr>
+<tr>
+<td title='com.tcw.testcases.ReportsTest.landingOnReportsPage()'><b>landingOnReportsPage</b><br>Test class: com.tcw.testcases.ReportsTest</td>
+<td></td>
+<td>20</td>
+<td>com.tcw.testcases.ReportsTest@7c209437</td></tr>
+<tr>
+<td title='com.tcw.testcases.SettingsTest.landingOnSettingsPage()'><b>landingOnSettingsPage</b><br>Test class: com.tcw.testcases.SettingsTest</td>
+<td></td>
+<td>20</td>
+<td>com.tcw.testcases.SettingsTest@163d04ff</td></tr>
+<tr>
+<td title='com.tcw.testcases.NotClockedInNowTest.notClockedInTest()'><b>notClockedInTest</b><br>Test class: com.tcw.testcases.NotClockedInNowTest</td>
+<td></td>
+<td>20</td>
+<td>com.tcw.testcases.NotClockedInNowTest@207b8649</td></tr>
+<tr>
+<td title='com.tcw.testcases.PaymentTest.landingOnPaymentPage()'><b>landingOnPaymentPage</b><br>Test class: com.tcw.testcases.PaymentTest</td>
+<td></td>
+<td>22</td>
+<td>com.tcw.testcases.PaymentTest@2262b621</td></tr>
 </table><p>
 </body>
 </html>
