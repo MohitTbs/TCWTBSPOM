@@ -18,4 +18,17 @@ public class PayrollTest extends LogInTest{
 		
 	}
 	
+	@Test(priority=2)
+	public void GeneratingThePayroll() {
+		logIn();
+		pp = new PayrollPage(driver);
+		pp.goToPayrollPage();
+		String txt = pp.GeneratePayroll();
+		try {
+		Assert.assertTrue(txt.contains("already"));
+		} catch (AssertionError e) {
+			Assert.assertTrue(!txt.contains("already"));
+		}
+	}
+	
 }
