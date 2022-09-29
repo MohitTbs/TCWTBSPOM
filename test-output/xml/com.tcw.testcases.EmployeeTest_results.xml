@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
            tests="3"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="98.189">
+           time="94.795">
   <properties />
+            <testcase name="landingOnEmployeePage" time="12.742" classname="com.tcw.testcases.EmployeeTest">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Expected condition failed: waiting for visibility of element located by By.id: divLoading (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64464/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: divLoading (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-CRE3CMG', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64464/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+  com.tcw.pages.LoginPage.loginIn(LoginPage.java:52)
+  com.tcw.testcases.LogInTest.logIn(LogInTest.java:23)
+  com.tcw.testcases.EmployeeTest.landingOnEmployeePage(EmployeeTest.java:17)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:568)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="landingOnEmployeePage" time="27.260" classname="com.tcw.testcases.EmployeeTest" />
-                <testcase name="globalSettingTest" time="38.968" classname="com.tcw.testcases.EmployeeTest" />
-                <testcase name="reimbursementTest" time="31.961" classname="com.tcw.testcases.EmployeeTest" />
+            <testcase name="globalSettingTest" time="51.761" classname="com.tcw.testcases.EmployeeTest" />
+                <testcase name="reimbursementTest" time="30.292" classname="com.tcw.testcases.EmployeeTest" />
       
 </testsuite>

@@ -12,7 +12,7 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 814.003s
+  Test duration: 121.839s
 </p>
 
 
@@ -20,39 +20,39 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.tcw.testcases.LiveStreamTest</td>
+        <td colspan="3" class="group">com.tcw.testcases.EmployeeTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  liveStreamTest
+                  landingOnEmployeePage
       </td>
   <td class="duration">
-    33.091s
+    12.742s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Capturing Screenshot
-                                <a target="_blank" href=Thu_Sep_29_13_15_15_IST_2022.jpg>Screenshot</a>
+                                <a target="_blank" href=Thu_Sep_29_17_02_44_IST_2022.jpg>Screenshot</a>
                                 <br>
-                                <a target="_blank" href=Thu_Sep_29_13_15_15_IST_2022.jpg><img src=Thu_Sep_29_13_15_15_IST_2022.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Thu_Sep_29_17_02_44_IST_2022.jpg><img src=Thu_Sep_29_17_02_44_IST_2022.jpg height=200 width=200></img></a>
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: divLoading (tried for 15 second(s) with 500 milliseconds interval)<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: divLoading (tried for 10 second(s) with 500 milliseconds interval)<br/>
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;<br/>
 System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58600/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: afd3c4b04e44d2d033e17c2d9d582299</b></a><br />
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64464/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3</b></a><br />
     <div class="stackTrace" id="exception-0">
               org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)<br />
               org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
-              com.tcw.base.BasePage.toWait(BasePage.java:43)<br />
-              com.tcw.pages.LiveStreamPage.liveStream(LiveStreamPage.java:22)<br />
-              com.tcw.testcases.LiveStreamTest.liveStreamTest(LiveStreamTest.java:20)<br />
+              com.tcw.pages.LoginPage.loginIn(LoginPage.java:52)<br />
+              com.tcw.testcases.LogInTest.logIn(LogInTest.java:23)<br />
+              com.tcw.testcases.EmployeeTest.landingOnEmployeePage(EmployeeTest.java:17)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -90,24 +90,6 @@ Session ID: afd3c4b04e44d2d033e17c2d9d582299</b></a><br />
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.tcw.testcases.ClockedInNowTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  clockedInNowTest
-      </td>
-  <td class="duration">
-    21.421s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
         <td colspan="3" class="group">com.tcw.testcases.EmployeeTest</td>
       </tr>
             
@@ -116,21 +98,7 @@ Session ID: afd3c4b04e44d2d033e17c2d9d582299</b></a><br />
                   globalSettingTest
       </td>
   <td class="duration">
-    38.968s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  landingOnEmployeePage
-      </td>
-  <td class="duration">
-    27.260s
+    51.761s
   </td>
   <td class="result">
         
@@ -144,382 +112,11 @@ Session ID: afd3c4b04e44d2d033e17c2d9d582299</b></a><br />
                   reimbursementTest
       </td>
   <td class="duration">
-    31.961s
+    30.292s
   </td>
   <td class="result">
         
           <i>Method arguments: </i><span class="arguments">{remEndDate=28/06/2022, remStDate=13/05/2021, remEmpSS=Maulik Dhaduk}</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.EmployeesClockedInTodayTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  timesheetSrchTest
-      </td>
-  <td class="duration">
-    20.849s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.NotClockedInNowTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  notClockedInTest
-      </td>
-  <td class="duration">
-    20.059s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.PaymentTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  landingOnPaymentPage
-      </td>
-  <td class="duration">
-    22.834s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.PayrollTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  GeneratingThePayroll
-      </td>
-  <td class="duration">
-    22.459s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  landingOnPayrollPage
-      </td>
-  <td class="duration">
-    24.245s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.PendingAbsenceRequestsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  timesheetRequestListTest
-      </td>
-  <td class="duration">
-    20.442s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.PendingTimesheetRequestsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  timesheetRequestListTest
-      </td>
-  <td class="duration">
-    18.768s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.PossibleClockInErrorsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  possClockInErrListTest
-      </td>
-  <td class="duration">
-    22.663s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.ReimbursementRequestsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  reimReqSrcTest
-      </td>
-  <td class="duration">
-    27.995s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.ReportsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  landingOnReportsPage
-      </td>
-  <td class="duration">
-    20.483s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.ScheduleTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  addScheduleForEmpTest
-      </td>
-  <td class="duration">
-    28.822s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{customPay=52.36, desiredDate=2022-09-09, PesonalNote=Your Notes, Notes=My Notes, jobDrpDwn=Home, desiredEmp=Hackshaw, endTime=05:30 PM, stTime=03:00 PM, locDrpDwn=India}</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  deleteScheduleForEmpTest
-      </td>
-  <td class="duration">
-    30.636s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{customPay=52.36, desiredDate=2022-09-09, PesonalNote=Your Notes, Notes=My Notes, jobDrpDwn=Home, desiredEmp=Hackshaw, endTime=05:30 PM, stTime=03:00 PM, locDrpDwn=India}</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.ScheduledEmployeesTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  daySchTest
-      </td>
-  <td class="duration">
-    25.063s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.SelfRegistrationRequestsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  selfRegUserTest
-      </td>
-  <td class="duration">
-    20.728s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.SettingsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  landingOnSettingsPage
-      </td>
-  <td class="duration">
-    20.445s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.ShiftSwitchRequestsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  switchScheduleReqTest
-      </td>
-  <td class="duration">
-    22.817s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.SupportTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  landingOnSupportPage
-      </td>
-  <td class="duration">
-    20.021s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.TaskTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  addTaskTest
-      </td>
-  <td class="duration">
-    23.808s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{task=Null Tasks, description=Automation skills, emp=Jay Z}</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.TimesheetTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  addAbsenceTest
-      </td>
-  <td class="duration">
-    57.924s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{emp=Twentyone 21, absenceNotes=Adding the absence through automated test case, absenceEndDt=20/08/2022, absenceJob=Design, absenceStDt=20/08/2022, absenceStTime=10:00 AM, absenceEndTime=05:30 PM, absenceType=Fiscal Year, absenceLocation=Cramer Dentistry}</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  addTimeSheetTest
-      </td>
-  <td class="duration">
-    54.530s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{addTimeNotes=Adding the timesheet through Automation, addTimeJob=Developing, clockInDt=17/08/2022, clockInTime=10:00 AM, clockOutDt=17/08/2022, addTimeLocation=Australia, clockOutTime=07:20 PM, emp=Urvashi N}</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.tcw.testcases.TimesheetsToVerifyTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  verifiedClockInTest
-      </td>
-  <td class="duration">
-    20.281s
-  </td>
-  <td class="result">
-        
     
         
 
