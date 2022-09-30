@@ -12,7 +12,7 @@
 	<test name="Test">
 		<classes>
 			
-			<class name="com.tcw.testcases.EmployeeTest" />
+			<class name="com.tcw.testcases.ReportsTest" />
 			
 		</classes>
 	</test> <!-- Test -->

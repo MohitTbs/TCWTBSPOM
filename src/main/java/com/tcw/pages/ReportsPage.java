@@ -33,6 +33,12 @@ public class ReportsPage extends BasePage {
 	@FindBy(id="Timesheet_IsStandard")
 	WebElement detailedTimesheetToggle;
 	
+	@FindBy(id="PTOBanks")
+	WebElement ptoBankTab;
+	
+	@FindBy(id="ptoBankReport")
+	WebElement ptoViewReportBtn;
+	
 	By tsEmpNameTxt_By =By.xpath("(//div[text()='Employee Name'])[1]");
 	
 	Actions act;
@@ -88,6 +94,19 @@ public class ReportsPage extends BasePage {
 		act.moveToElement(tsEmpNameTxt).perform();
 		return tsEmpNameTxt.getText();
 		
+	}
+	
+	//Pto Banks
+	public String genPTOBanks() {
+		act = new Actions(driver);
+		wait = new WebDriverWait(driver,Duration.ofSeconds(15));
+		act.moveToElement(ptoBankTab).click().build().perform();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
+		act.moveToElement(ptoViewReportBtn).click().build().perform();
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameId));
+		wait.until(ExpectedConditions.presenceOfElementLocated(tsEmpNameTxt_By));
+		act.moveToElement(tsEmpNameTxt).perform();
+		return tsEmpNameTxt.getText();
 	}
 
 }

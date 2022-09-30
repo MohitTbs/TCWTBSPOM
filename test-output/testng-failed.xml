@@ -8,7 +8,7 @@
           <include name="tearDown"/>
           <include name="settingTheLogs"/>
           <include name="setUp"/>
-          <include name="viewStdTimesheet"/>
+          <include name="viewPtoBank"/>
         </methods>
       </class> <!-- com.tcw.testcases.ReportsTest -->
     </classes>

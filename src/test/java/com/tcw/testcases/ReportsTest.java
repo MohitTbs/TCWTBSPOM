@@ -34,4 +34,13 @@ public class ReportsTest extends LogInTest {
 		String txt = rp.genDtdTimesheet();
 		Assert.assertEquals("Employee Name", txt);
 	}
+	
+	@Test(priority=4)
+	public void viewPtoBank() {
+		logIn();
+		rp = new ReportsPage(driver);
+		rp.goToReportsPage();
+		String txt = rp.genPTOBanks();
+		Assert.assertEquals("Employee Name", txt);
+	}
 }

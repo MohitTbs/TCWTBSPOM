@@ -151,7 +151,7 @@
 
 					<testFailureIgnore> false </testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/runner/Allfile.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 
@@ -163,6 +163,6 @@
 
 
 	</build>
-
+<!-- src/test/resources/runner/Allfile.xml -->
 
 </project>
