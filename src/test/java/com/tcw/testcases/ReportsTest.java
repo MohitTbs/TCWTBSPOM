@@ -17,4 +17,21 @@ public class ReportsTest extends LogInTest {
 		Assert.assertEquals(reportsTtl1, "Reports");
 	}
 
+	@Test(priority=2)
+	public void viewStdTimesheet() {
+		logIn();
+		rp = new ReportsPage(driver);
+		rp.goToReportsPage();
+		String txt = rp.genStdTimesheet();
+		Assert.assertEquals("Employee Name", txt);	
+	}
+	
+	@Test(priority=3)
+	public void viewDetailedTimesheet() {
+		logIn();
+		rp = new ReportsPage(driver);
+		rp.goToReportsPage();
+		String txt = rp.genDtdTimesheet();
+		Assert.assertEquals("Employee Name", txt);
+	}
 }

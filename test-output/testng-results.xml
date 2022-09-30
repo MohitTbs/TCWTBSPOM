@@ -1,136 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Capturing Screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Thu_Sep_29_17_02_44_IST_2022.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Thu_Sep_29_17_02_44_IST_2022.jpg><img src=Thu_Sep_29_17_02_44_IST_2022.jpg height=200 width=200></img></a>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-09-29T17:02:18 IST" name="Suite" finished-at="2022-09-29T17:04:21 IST" duration-ms="122337">
+  <suite started-at="2022-09-30T15:40:52 IST" name="Default suite" finished-at="2022-09-30T15:41:32 IST" duration-ms="39569">
     <groups>
     </groups>
-    <test started-at="2022-09-29T17:02:18 IST" name="Test" finished-at="2022-09-29T17:04:21 IST" duration-ms="122337">
-      <class name="com.tcw.testcases.EmployeeTest">
-        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:02:18 IST" name="settingTheLogs" finished-at="2022-09-29T17:02:18 IST" duration-ms="58" status="PASS">
+    <test started-at="2022-09-30T15:40:52 IST" name="Default test" finished-at="2022-09-30T15:41:32 IST" duration-ms="39569">
+      <class name="com.tcw.testcases.ReportsTest">
+        <test-method is-config="true" signature="settingTheLogs()[pri:0, instance:com.tcw.testcases.ReportsTest@3fed2870]" started-at="2022-09-30T15:40:52 IST" name="settingTheLogs" finished-at="2022-09-30T15:40:52 IST" duration-ms="57" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingTheLogs -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:02:18 IST" name="setUp" finished-at="2022-09-29T17:02:31 IST" duration-ms="12505" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.ReportsTest@3fed2870]" started-at="2022-09-30T15:40:52 IST" name="setUp" finished-at="2022-09-30T15:40:58 IST" duration-ms="5522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="landingOnEmployeePage()[pri:1, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:02:31 IST" name="landingOnEmployeePage" finished-at="2022-09-29T17:02:44 IST" duration-ms="12742" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: divLoading (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-CRE3CMG', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64464/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: divLoading (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-CRE3CMG', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64464/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.tcw.pages.LoginPage.loginIn(LoginPage.java:52)
-at com.tcw.testcases.LogInTest.logIn(LogInTest.java:23)
-at com.tcw.testcases.EmployeeTest.landingOnEmployeePage(EmployeeTest.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="viewDetailedTimesheet()[pri:3, instance:com.tcw.testcases.ReportsTest@3fed2870]" started-at="2022-09-30T15:40:58 IST" name="viewDetailedTimesheet" finished-at="2022-09-30T15:41:32 IST" duration-ms="33646" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Capturing Screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Thu_Sep_29_17_02_44_IST_2022.jpg>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Thu_Sep_29_17_02_44_IST_2022.jpg><img src=Thu_Sep_29_17_02_44_IST_2022.jpg height=200 width=200></img></a>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- landingOnEmployeePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:02:44 IST" name="tearDown" finished-at="2022-09-29T17:02:44 IST" duration-ms="369" status="PASS">
+        </test-method> <!-- viewDetailedTimesheet -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.ReportsTest@3fed2870]" started-at="2022-09-30T15:41:32 IST" name="tearDown" finished-at="2022-09-30T15:41:32 IST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:02:44 IST" name="setUp" finished-at="2022-09-29T17:02:53 IST" duration-ms="8653" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="globalSettingTest()[pri:2, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:02:53 IST" name="globalSettingTest" finished-at="2022-09-29T17:03:45 IST" duration-ms="51761" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSettingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:03:45 IST" name="tearDown" finished-at="2022-09-29T17:03:45 IST" duration-ms="464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:03:45 IST" name="setUp" finished-at="2022-09-29T17:03:50 IST" duration-ms="4660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="reimbursementTest(java.util.Hashtable)[pri:3, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:03:50 IST" name="reimbursementTest" data-provider="dp2" finished-at="2022-09-29T17:04:20 IST" duration-ms="30292" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{remEndDate=28/06/2022, remStDate=13/05/2021, remEmpSS=Maulik Dhaduk}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reimbursementTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tcw.testcases.EmployeeTest@6035b93b]" started-at="2022-09-29T17:04:20 IST" name="tearDown" finished-at="2022-09-29T17:04:21 IST" duration-ms="335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tcw.testcases.EmployeeTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.tcw.testcases.ReportsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
