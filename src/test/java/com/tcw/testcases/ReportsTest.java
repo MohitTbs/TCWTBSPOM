@@ -43,4 +43,13 @@ public class ReportsTest extends LogInTest {
 		String txt = rp.genPTOBanks();
 		Assert.assertEquals("Employee Name", txt);
 	}
+	
+	@Test(priority=5)
+	public void viewEmpContactList() {
+		logIn();
+		rp = new ReportsPage(driver);
+		rp.goToReportsPage();
+		rp.genEmpContactList();
+		
+	}
 }

@@ -1,3 +1,3 @@
-INFO    2022-09-30 15:40:52,899 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
-INFO    2022-09-30 15:40:55,492 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
-INFO    2022-09-30 15:40:58,454 [main] com.tcw.base.BasePage  - In login 2
+INFO    2022-10-04 15:04:18,179 [main] com.tcw.base.BasePage  - Config Properties loaded !!!
+INFO    2022-10-04 15:04:25,751 [main] com.tcw.base.BasePage  - Chrome Browser Launched !!!
+INFO    2022-10-04 15:04:28,821 [main] com.tcw.base.BasePage  - In login 2

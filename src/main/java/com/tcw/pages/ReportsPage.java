@@ -39,6 +39,12 @@ public class ReportsPage extends BasePage {
 	@FindBy(id="ptoBankReport")
 	WebElement ptoViewReportBtn;
 	
+	@FindBy(id="ContactBlock")
+	WebElement empContactListTab;
+	
+	@FindBy(xpath="//a[@type='submit']")
+	WebElement empContactListViewReportBtn;
+	
 	By tsEmpNameTxt_By =By.xpath("(//div[text()='Employee Name'])[1]");
 	
 	Actions act;
@@ -109,4 +115,14 @@ public class ReportsPage extends BasePage {
 		return tsEmpNameTxt.getText();
 	}
 
+	//Emp Contact List
+	public void genEmpContactList() {
+		act = new Actions(driver);
+		wait = new WebDriverWait(driver,Duration.ofSeconds(15));
+		act.moveToElement(empContactListTab).click().build().perform();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
+		act.moveToElement(empContactListViewReportBtn).click().build().perform();
+		
+		
+	}
 }

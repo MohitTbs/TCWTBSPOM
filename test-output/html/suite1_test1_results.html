@@ -12,7 +12,7 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 121.839s
+  Test duration: 130.361s
 </p>
 
 
@@ -20,39 +20,67 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.tcw.testcases.EmployeeTest</td>
+        <td colspan="3" class="group">com.tcw.testcases.ReportsTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  landingOnEmployeePage
+                  viewPtoBank
       </td>
   <td class="duration">
-    12.742s
+    23.228s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Capturing Screenshot
-                                <a target="_blank" href=Thu_Sep_29_17_02_44_IST_2022.jpg>Screenshot</a>
+                                <a target="_blank" href=Fri_Sep_30_16_16_50_IST_2022.jpg>Screenshot</a>
                                 <br>
-                                <a target="_blank" href=Thu_Sep_29_17_02_44_IST_2022.jpg><img src=Thu_Sep_29_17_02_44_IST_2022.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Fri_Sep_30_16_16_50_IST_2022.jpg><img src=Fri_Sep_30_16_16_50_IST_2022.jpg height=200 width=200></img></a>
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: divLoading (tried for 10 second(s) with 500 milliseconds interval)<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException<br/>
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;<br/>
 System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64464/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3</b></a><br />
+Command: [57516c54c9ba82ab435fbe31cc60f9cd, actions {actions=[org.openqa.selenium.interactions.Sequence@3e53c4ad]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55981/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 57516c54c9ba82ab435fbe31cc60f9cd</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
-              com.tcw.pages.LoginPage.loginIn(LoginPage.java:52)<br />
-              com.tcw.testcases.LogInTest.logIn(LogInTest.java:23)<br />
-              com.tcw.testcases.EmployeeTest.landingOnEmployeePage(EmployeeTest.java:17)<br />
+              org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)<br />
+              org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)<br />
+              java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)<br />
+              java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)<br />
+              java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)<br />
+              java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)<br />
+              java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)<br />
+              java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)<br />
+              java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)<br />
+              java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)<br />
+              java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)<br />
+              java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)<br />
+              org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)<br />
+              com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)<br />
+              org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)<br />
+              org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+              org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)<br />
+              org.openqa.selenium.json.Json.toJson(Json.java:42)<br />
+              org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)<br />
+              org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:627)<br />
+              org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)<br />
+              com.tcw.pages.ReportsPage.genPTOBanks(ReportsPage.java:103)<br />
+              com.tcw.testcases.ReportsTest.viewPtoBank(ReportsTest.java:43)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -81,7 +109,172 @@ Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3</b></a><br />
               org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
               org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
               org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.lang.reflect.InvocationTargetException</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+                      org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)<br />
+                      java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)<br />
+                      java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)<br />
+                      java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)<br />
+                      java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)<br />
+                      java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)<br />
+                      java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)<br />
+                      java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)<br />
+                      java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)<br />
+                      java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)<br />
+                      java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)<br />
+                      com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)<br />
+                      org.openqa.selenium.json.Json.toJson(Json.java:42)<br />
+                      org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)<br />
+                      org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:627)<br />
+                      org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)<br />
+                      com.tcw.pages.ReportsPage.genPTOBanks(ReportsPage.java:103)<br />
+                      com.tcw.testcases.ReportsTest.viewPtoBank(ReportsTest.java:43)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+                      org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+                      org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+                      org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+                      org.testng.TestRunner.run(TestRunner.java:596)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+                      org.testng.TestNG.run(TestNG.java:1031)<br />
+                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#PTOBanks&quot;}<br/>
+&nbsp; (Session info: chrome=106.0.5249.61)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;<br/>
+System info: host: &apos;DESKTOP-CRE3CMG&apos;, ip: &apos;192.168.1.173&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [57516c54c9ba82ab435fbe31cc60f9cd, findElement {using=id, value=PTOBanks}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\TECHBR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55981/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 57516c54c9ba82ab435fbe31cc60f9cd</a><br />
+        <div class="stackTrace" id="exception-2">
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+                      java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+                      org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+                      org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+                      org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)<br />
+                      org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+                      org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)<br />
+                      org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+                      jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)<br />
+                      org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:201)<br />
+                      org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:152)<br />
+                      org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)<br />
+                      org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+                      org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)<br />
+                      java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)<br />
+                      java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)<br />
+                      java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)<br />
+                      java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)<br />
+                      java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)<br />
+                      java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)<br />
+                      java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)<br />
+                      java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)<br />
+                      java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)<br />
+                      java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)<br />
+                      com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)<br />
+                      org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)<br />
+                      org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)<br />
+                      org.openqa.selenium.json.Json.toJson(Json.java:42)<br />
+                      org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)<br />
+                      org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:627)<br />
+                      org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)<br />
+                      com.tcw.pages.ReportsPage.genPTOBanks(ReportsPage.java:103)<br />
+                      com.tcw.testcases.ReportsTest.viewPtoBank(ReportsTest.java:43)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+                      org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+                      org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+                      org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+                      org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
+                      org.testng.TestRunner.run(TestRunner.java:596)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1063)<br />
+                      org.testng.TestNG.run(TestNG.java:1031)<br />
+                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                  </div>
+          </div>
       </td>
 </tr>
       </table>
@@ -90,15 +283,15 @@ Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3</b></a><br />
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.tcw.testcases.EmployeeTest</td>
+        <td colspan="3" class="group">com.tcw.testcases.ReportsTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  globalSettingTest
+                  landingOnReportsPage
       </td>
   <td class="duration">
-    51.761s
+    23.020s
   </td>
   <td class="result">
         
@@ -109,14 +302,27 @@ Session ID: 5dbc36b3be1be5e0ead1df4b1ec939b3</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  reimbursementTest
+                  viewDetailedTimesheet
       </td>
   <td class="duration">
-    30.292s
+    34.973s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">{remEndDate=28/06/2022, remStDate=13/05/2021, remEmpSS=Maulik Dhaduk}</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  viewStdTimesheet
+      </td>
+  <td class="duration">
+    28.672s
+  </td>
+  <td class="result">
+        
     
         
 

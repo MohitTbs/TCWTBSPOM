@@ -7,8 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="settingTheLogs"/>
+          <include name="viewEmpContactList"/>
           <include name="setUp"/>
-          <include name="viewPtoBank"/>
         </methods>
       </class> <!-- com.tcw.testcases.ReportsTest -->
     </classes>
