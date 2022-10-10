@@ -45,6 +45,9 @@ public class ReportsPage extends BasePage {
 	@FindBy(xpath="//a[@type='submit']")
 	WebElement empContactListViewReportBtn;
 	
+	@FindBy(id="PrePayroll")
+	WebElement prePayrollTab;
+	
 	By tsEmpNameTxt_By =By.xpath("(//div[text()='Employee Name'])[1]");
 	
 	Actions act;
@@ -104,25 +107,42 @@ public class ReportsPage extends BasePage {
 	
 	//Pto Banks
 	public String genPTOBanks() {
+//		act = new Actions(driver);
+//		wait = new WebDriverWait(driver,Duration.ofSeconds(15));
+//		act.moveToElement(ptoBankTab).click().build().perform();
+//		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
+//		act.moveToElement(ptoViewReportBtn).click().build().perform();
+//		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameId));
+//		wait.until(ExpectedConditions.presenceOfElementLocated(tsEmpNameTxt_By));
+//		act.moveToElement(tsEmpNameTxt).perform();
+//		return tsEmpNameTxt.getText();
+		return gettingTheReports(ptoBankTab,ptoViewReportBtn);
+	}
+
+	//Emp Contact List
+	public String genEmpContactList() {
+//		act = new Actions(driver);
+//		wait = new WebDriverWait(driver,Duration.ofSeconds(15));
+//		act.moveToElement(empContactListTab).click().build().perform();
+//		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
+//		act.moveToElement(empContactListViewReportBtn).click().build().perform();
+//		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameId));
+//		wait.until(ExpectedConditions.presenceOfElementLocated(tsEmpNameTxt_By));
+//		act.moveToElement(tsEmpNameTxt).perform();
+//		return tsEmpNameTxt.getText();
+		return gettingTheReports(empContactListTab,empContactListViewReportBtn);
+	}
+	
+	
+	public String gettingTheReports(WebElement targetReport, WebElement viewBtn) {
 		act = new Actions(driver);
 		wait = new WebDriverWait(driver,Duration.ofSeconds(15));
-		act.moveToElement(ptoBankTab).click().build().perform();
+		act.moveToElement(targetReport).click().build().perform();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
-		act.moveToElement(ptoViewReportBtn).click().build().perform();
+		act.moveToElement(viewBtn).click().build().perform();
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameId));
 		wait.until(ExpectedConditions.presenceOfElementLocated(tsEmpNameTxt_By));
 		act.moveToElement(tsEmpNameTxt).perform();
 		return tsEmpNameTxt.getText();
-	}
-
-	//Emp Contact List
-	public void genEmpContactList() {
-		act = new Actions(driver);
-		wait = new WebDriverWait(driver,Duration.ofSeconds(15));
-		act.moveToElement(empContactListTab).click().build().perform();
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
-		act.moveToElement(empContactListViewReportBtn).click().build().perform();
-		
-		
 	}
 }
